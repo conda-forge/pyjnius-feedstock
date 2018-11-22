@@ -10,7 +10,11 @@ cxx_compiler:
 - toolchain_cxx
 docker_image:
 - condaforge/linux-anvil
+openjdk:
+- '8'
 pin_run_as_build:
+  openjdk:
+    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
