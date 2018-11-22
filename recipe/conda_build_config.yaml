@@ -1,2 +1,5 @@
 openjdk:
   - 8
+pin_run_as_build:
+  openjdk:
+    max_pin: x.x

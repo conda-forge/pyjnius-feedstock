@@ -13,14 +13,13 @@ source:
 build:
   number: {{ build_number }}
   skip: true  # [py2k]
-  string: openjdk{{ openjdk }}_build{{ build_number }}
 
 requirements:
  build:
    - {{ compiler('c') }}
    - {{ compiler('cxx') }}
  host:
-   - openjdk {{ openjdk }}
+   - openjdk
    - python
    - cython
    - pip
@@ -28,7 +27,7 @@ requirements:
    - nose
    - ant
  run:
-   - openjdk {{ openjdk }}
+   - openjdk
    - python
    - six >=1.7.0
    - setuptools
