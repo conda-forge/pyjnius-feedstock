@@ -13,7 +13,7 @@ source:
 build:
   number: {{ build_number }}
   skip: true  # [py2k]
-  string: openjdk{{ openjdk }}_{{ build_number }}
+  string: openjdk{{ openjdk }}_build{{ build_number }}
 
 requirements:
  build:
