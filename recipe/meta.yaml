@@ -10,7 +10,7 @@ source:
   sha256: 67b4031752cb32213cefd672b2792f3e75791e68bfd1ca7a5d328ff00acc1622
 
 build:
-  number: 1000
+  number: 1001
   skip: true  # [py2k]
 
 requirements:
@@ -18,7 +18,7 @@ requirements:
    - {{ compiler('c') }}
    - {{ compiler('cxx') }}
  host:
-   - openjdk >=8
+   - openjdk =8
    - python
    - cython
    - pip
@@ -26,7 +26,7 @@ requirements:
    - nose
    - ant
  run:
-   - openjdk >=8
+   - openjdk =8
    - python
    - six >=1.7.0
    - setuptools
