@@ -22,7 +22,6 @@ requirements:
  build:
    - {{ compiler('c') }}
    - {{ compiler('cxx') }}
-   - openjdk
  host:
    - openjdk
    - python
