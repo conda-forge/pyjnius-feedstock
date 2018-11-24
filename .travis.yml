@@ -8,22 +8,14 @@ osx_image: xcode6.4
 
 env:
   matrix:
-    - CONFIG=osx_c_compilerclangcxx_compilerclangxxopenjdk10python3.6
-    - CONFIG=osx_c_compilerclangcxx_compilerclangxxopenjdk10python3.7
-    - CONFIG=osx_c_compilerclangcxx_compilerclangxxopenjdk11python3.6
-    - CONFIG=osx_c_compilerclangcxx_compilerclangxxopenjdk11python3.7
-    - CONFIG=osx_c_compilerclangcxx_compilerclangxxopenjdk8python3.6
-    - CONFIG=osx_c_compilerclangcxx_compilerclangxxopenjdk8python3.7
-    - CONFIG=osx_c_compilerclangcxx_compilerclangxxopenjdk9python3.6
-    - CONFIG=osx_c_compilerclangcxx_compilerclangxxopenjdk9python3.7
-    - CONFIG=osx_c_compilertoolchain_ccxx_compilertoolchain_cxxopenjdk10python3.6
-    - CONFIG=osx_c_compilertoolchain_ccxx_compilertoolchain_cxxopenjdk10python3.7
-    - CONFIG=osx_c_compilertoolchain_ccxx_compilertoolchain_cxxopenjdk11python3.6
-    - CONFIG=osx_c_compilertoolchain_ccxx_compilertoolchain_cxxopenjdk11python3.7
-    - CONFIG=osx_c_compilertoolchain_ccxx_compilertoolchain_cxxopenjdk8python3.6
-    - CONFIG=osx_c_compilertoolchain_ccxx_compilertoolchain_cxxopenjdk8python3.7
-    - CONFIG=osx_c_compilertoolchain_ccxx_compilertoolchain_cxxopenjdk9python3.6
-    - CONFIG=osx_c_compilertoolchain_ccxx_compilertoolchain_cxxopenjdk9python3.7
+    - CONFIG=osx_openjdk10python3.6
+    - CONFIG=osx_openjdk10python3.7
+    - CONFIG=osx_openjdk11python3.6
+    - CONFIG=osx_openjdk11python3.7
+    - CONFIG=osx_openjdk8python3.6
+    - CONFIG=osx_openjdk8python3.7
+    - CONFIG=osx_openjdk9python3.6
+    - CONFIG=osx_openjdk9python3.7
 
   global:
     # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
