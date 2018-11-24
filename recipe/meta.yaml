@@ -9,9 +9,9 @@ package:
 source:
   #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   #sha256: 0bc70b48eb764b20b017e44ef2df6eae94e4a2f90ae63160d2a166c406e1ccf9
-  # Currently testing on https://github.com/kivy/pyjnius/pull/364
-  url: https://github.com/kivy/pyjnius/archive/5cda4258847a8d47c4b04ee1de3627132355b510.zip
-  sha256: 525ad5e07011c667d4c56f0341403eef082b49a90290e13fdc2ef75102082758
+  # Currently testing on pyjnius master
+  url: https://github.com/kivy/pyjnius/archive/8aa91781f6d7726f9eb04fb8b1fb913be0ba1f4c.zip
+  sha256: 301d3e1bc6105ccc3fb1a887cef0aa84557270365ff62d818f6bef1197903733
 
 
 build:
