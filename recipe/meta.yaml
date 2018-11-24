@@ -9,10 +9,9 @@ package:
 source:
   #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   #sha256: 0bc70b48eb764b20b017e44ef2df6eae94e4a2f90ae63160d2a166c406e1ccf9
-  #url: https://github.com/kivy/pyjnius/archive/940b039a2a7859835890f08bb6e7c47a689e83b0.zip
-  #sha256: de347b0413b75546d61b9604db17b10c68d1f614c40a33f992c477c8f3cbecef
-  url: https://github.com/hadim/pyjnius/archive/fix-osx.zip
-  sha256: b34a387bde8606956de4436527efd42fdd093df332e8c45d2179df5f10819f94
+  # Currently testing on https://github.com/kivy/pyjnius/pull/364
+  url: https://github.com/kivy/pyjnius/archive/5cda4258847a8d47c4b04ee1de3627132355b510.zip
+  sha256: 525ad5e07011c667d4c56f0341403eef082b49a90290e13fdc2ef75102082758
 
 
 build:
@@ -23,6 +22,7 @@ requirements:
  build:
    - {{ compiler('c') }}
    - {{ compiler('cxx') }}
+   - openjdk
  host:
    - openjdk
    - python
