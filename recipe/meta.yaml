@@ -12,7 +12,7 @@ source:
   #url: https://github.com/kivy/pyjnius/archive/940b039a2a7859835890f08bb6e7c47a689e83b0.zip
   #sha256: de347b0413b75546d61b9604db17b10c68d1f614c40a33f992c477c8f3cbecef
   url: https://github.com/hadim/pyjnius/archive/fix-osx.zip
-  sha256: f2b2a01930767e25cf3d4527117b365ff1ead9e210dac6bd851515857d511677
+  sha256: b34a387bde8606956de4436527efd42fdd093df332e8c45d2179df5f10819f94
 
 
 build:
