@@ -1,8 +1,8 @@
 diff --git a/setup.py b/setup.py
-index b7c8139..aa94245 100644
+index b7c8139..bd3843d 100644
 --- a/setup.py
 +++ b/setup.py
-@@ -99,41 +99,49 @@ if PLATFORM == 'android':
+@@ -99,41 +99,51 @@ if PLATFORM == 'android':
      # for android, we use SDL...
      LIBRARIES = ['sdl', 'log']
      LIBRARY_DIRS = ['libs/' + getenv('ARCH')]
@@ -22,7 +22,6 @@ index b7c8139..aa94245 100644
 +        JAVA_HOME = JAVA_HOME.decode()
 +
 +    JAVA_HOME = JAVA_HOME.strip()
-+    print('java_home: {0}\n'.format(JAVA_HOME))
 +
 +    if not JAVA_HOME:
          raise Exception('You must install Java on your Mac OS X distro')
@@ -40,7 +39,7 @@ index b7c8139..aa94245 100644
      else:
          LIB_LOCATION = 'jre/lib/server/libjvm.dylib'
 -        FULL_LIB_LOCATION = join(FRAMEWORK, LIB_LOCATION)
-
+ 
 -        if not exists(FULL_LIB_LOCATION):
 +        # We want to favor Java installation declaring JAVA_HOME
 +        if getenv('JAVA_HOME'):
@@ -57,7 +56,7 @@ index b7c8139..aa94245 100644
 +            # In that case, the Java version is very likely >=9.
 +            # So we need to modify the `libjvm.so` path.
 +            LIB_LOCATION = 'lib/server/libjvm.dylib'
-
+ 
          INCLUDE_DIRS = [
 -            '{0}/include'.format(FRAMEWORK),
 -            '{0}/include/darwin'.format(FRAMEWORK)
@@ -65,6 +64,9 @@ index b7c8139..aa94245 100644
 +            '{0}/include/darwin'.format(JAVA_HOME)
          ]
 -    compile_native_invocation_handler(FRAMEWORK)
++
++    print('JAVA_HOME: {0}\n'.format(JAVA_HOME))
++
 +    compile_native_invocation_handler(JAVA_HOME)
  else:
      # note: if on Windows, set ONLY JAVA_HOME
