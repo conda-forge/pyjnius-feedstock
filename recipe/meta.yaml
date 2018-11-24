@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/kivy/pyjnius/archive/{{ version }}.tar.gz
-  sha256: 67b4031752cb32213cefd672b2792f3e75791e68bfd1ca7a5d328ff00acc1622
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0bc70b48eb764b20b017e44ef2df6eae94e4a2f90ae63160d2a166c406e1ccf9
 
 build:
   number: {{ build_number }}
