@@ -1,0 +1,25 @@
+diff --git a/setup.py b/setup.py
+index b7c8139..66acc32 100644
+--- a/setup.py
++++ b/setup.py
+@@ -122,13 +122,18 @@ elif PLATFORM == 'darwin':
+         FULL_LIB_LOCATION = join(FRAMEWORK, LIB_LOCATION)
+
+         if not exists(FULL_LIB_LOCATION):
+-            JAVA_HOME = getenv('JAVA_HOME')
+-            FULL_LIB_LOCATION = join(JAVA_HOME, LIB_LOCATION)
++            FRAMEWORK = getenv('JAVA_HOME')
++            FULL_LIB_LOCATION = join(FRAMEWORK, LIB_LOCATION)
+             if not exists(FULL_LIB_LOCATION):
+                 # In that case, the Java version is very likely >=9.
+                 # So we need to modify the `libjvm.so` path.
+                 LIB_LOCATION = 'lib/server/libjvm.dylib'
+
++        print("********************************")
++        print(FRAMEWORK)
++        print(LIB_LOCATION)
++        print(getenv('JAVA_HOME'))
++
+         INCLUDE_DIRS = [
+             '{0}/include'.format(FRAMEWORK),
+             '{0}/include/darwin'.format(FRAMEWORK)

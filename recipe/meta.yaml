@@ -13,6 +13,8 @@ source:
   url: https://github.com/kivy/pyjnius/archive/8aa91781f6d7726f9eb04fb8b1fb913be0ba1f4c.zip
   sha256: 301d3e1bc6105ccc3fb1a887cef0aa84557270365ff62d818f6bef1197903733
 
+  patches:
+    - fix_setup.py.patch
 
 build:
   number: {{ build_number }}
