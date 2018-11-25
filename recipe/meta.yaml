@@ -42,7 +42,7 @@ about:
   home: https://github.com/kivy/pyjnius
   license: MIT
   license_file: LICENSE
-  summary: "A Python module to access Java classes as Python classes using JNI (shared memory)."
+  summary: "A Python module to access Java classes as Python classes using JNI (shared memory)"
 
 extra:
   recipe-maintainers:
