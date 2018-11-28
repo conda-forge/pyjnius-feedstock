@@ -1,5 +1,7 @@
 openjdk:
   - 8
+  - 9
+  - 10
   - 11
 
 pin_run_as_build:
