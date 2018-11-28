@@ -1,13 +1,7 @@
 openjdk:
   - 8
-  - 9
-  - 10
   - 11
 
 pin_run_as_build:
   openjdk:
     max_pin: x.x
-
-c_compiler:
-  - toolchain_c  # [not win]
-  - vs2015  # [win]
