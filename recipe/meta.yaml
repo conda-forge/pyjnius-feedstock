@@ -10,11 +10,8 @@ source:
   #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   #sha256: 0bc70b48eb764b20b017e44ef2df6eae94e4a2f90ae63160d2a166c406e1ccf9
   # Currently testing on pyjnius master
-  url: https://github.com/kivy/pyjnius/archive/8aa91781f6d7726f9eb04fb8b1fb913be0ba1f4c.zip
-  sha256: 301d3e1bc6105ccc3fb1a887cef0aa84557270365ff62d818f6bef1197903733
-
-  patches:
-    - fix_setup.py.patch
+  url: https://github.com/kivy/pyjnius/archive/9e5ec4fbec01c6d7fc194cdef06a36378810b29f.zip
+  sha256: a5d6efb77ce579f3a561ad9dab214d85e3894288f38a35b1dbd274f59606359e
 
 build:
   number: {{ build_number }}
