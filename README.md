@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: A Python module to access Java classes as Python classes using JNI (shared memory).
+Summary: A Python module to access Java classes as Python classes using JNI (shared memory)
 
 
 

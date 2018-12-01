@@ -15,3 +15,5 @@ for idx, c in enumerate( hw ):
 	if c != al.get( idx ):
 		raise RuntimeError('Character mismatch!')
 
+System = autoclass('java.lang.System')
+print(System.getProperty('java.version'))
