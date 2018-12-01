@@ -1,6 +1,5 @@
 {% set name = "pyjnius" %}
-{% set version = "1.1.3" %}
-{% set build_number = 1001 %}
+{% set version = "1.1.3-dev0-b212d5" %}
 
 package:
   name: {{ name|lower }}
@@ -10,11 +9,11 @@ source:
   #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   #sha256: 0bc70b48eb764b20b017e44ef2df6eae94e4a2f90ae63160d2a166c406e1ccf9
   # Currently testing on pyjnius master
-  url: https://github.com/kivy/pyjnius/archive/9e5ec4fbec01c6d7fc194cdef06a36378810b29f.zip
-  sha256: a5d6efb77ce579f3a561ad9dab214d85e3894288f38a35b1dbd274f59606359e
+  url: https://github.com/kivy/pyjnius/archive/b212d57d894ee62d2f48c9d82d28a015e8d548b8.zip
+  sha256: 189c060c46dacc052a5a573124224f4292f2cd41bbd6b86d9e05667d643975c9
 
 build:
-  number: {{ build_number }}
+  number: 1001
   skip: true  # [py2k]
 
 requirements:
