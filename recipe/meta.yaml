@@ -1,5 +1,5 @@
 {% set name = "pyjnius" %}
-{% set version = "1.1.4.dev0.b212d5" %}
+{% set version = "1.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: 189c060c46dacc052a5a573124224f4292f2cd41bbd6b86d9e05667d643975c9
 
 build:
-  number: 1001
+  number: 1000
   skip: true  # [py2k]
 
 requirements:
