@@ -5,6 +5,7 @@ setlocal EnableDelayedExpansion
 FOR %%F IN (activate deactivate) DO (
     IF NOT EXIST %PREFIX%\etc\conda\%%F.d MKDIR %PREFIX%\etc\conda\%%F.d
     COPY %RECIPE_DIR%\%%F.bat %PREFIX%\etc\conda\%%F.d\%PKG_NAME%_%%F.bat
+    COPY %RECIPE_DIR%\%%F.sh %PREFIX%\etc\conda\%%F.d\%PKG_NAME%_%%F.sh
 )
 
 call %RECIPE_DIR%\activate.bat

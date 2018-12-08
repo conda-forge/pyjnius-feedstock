@@ -11,5 +11,4 @@ make
 make tests
 pip install --no-deps .
 
-
 cp build/pyjnius.jar $PYJNIUS_SHARE
