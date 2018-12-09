@@ -1,6 +1,4 @@
 SET "PYJNIUS_JAR_BACKUP=%PYJNIUS_JAR%"
 SET "PYJNIUS_JAR=%CONDA_PREFIX%\share\pyjnius\pyjnius.jar"
-SET "JDK_HOME_BACKUP=%JDK_HOME%"
-SET "JDK_HOME=%JAVA_HOME%"
 SET "PATH_BACKUP=%PATH%"
-SET "PATH=%JDK_HOME%\jre\bin\server;%JDK_HOME%\bin\server;%JDK_HOME%\bin;%PATH%"
+SET "PATH=%JAVA_HOME%\jre\bin\server;%JAVA_HOME%\bin\server;%JAVA_HOME%\bin;%PATH%"
