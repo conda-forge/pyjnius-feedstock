@@ -1,3 +1,4 @@
+@echo off
 SET "PYJNIUS_JAR_BACKUP=%PYJNIUS_JAR%"
 SET "PYJNIUS_JAR=%CONDA_PREFIX%\share\pyjnius\pyjnius.jar"
 SET "PATH_BACKUP=%PATH%"
