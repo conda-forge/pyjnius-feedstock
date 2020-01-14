@@ -10,52 +10,84 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      linux_openjdk10python3.6:
-        CONFIG: linux_openjdk10python3.6
+      linux_openjdk11python3.7.3=h0371630_0:
+        CONFIG: linux_openjdk11python3.7.3=h0371630_0
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openjdk10python3.7:
-        CONFIG: linux_openjdk10python3.7
+      linux_openjdk11python3.7.3=h33d41f4_1:
+        CONFIG: linux_openjdk11python3.7.3=h33d41f4_1
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openjdk10python3.8:
-        CONFIG: linux_openjdk10python3.8
+      linux_openjdk11python3.7.3=h357f687_2:
+        CONFIG: linux_openjdk11python3.7.3=h357f687_2
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openjdk11python3.6:
-        CONFIG: linux_openjdk11python3.6
+      linux_openjdk11python3.7.3=h5b0a415_0:
+        CONFIG: linux_openjdk11python3.7.3=h5b0a415_0
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openjdk11python3.7:
-        CONFIG: linux_openjdk11python3.7
+      linux_openjdk11python3.7.4=h265db76_0:
+        CONFIG: linux_openjdk11python3.7.4=h265db76_0
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openjdk11python3.8:
-        CONFIG: linux_openjdk11python3.8
+      linux_openjdk11python3.7.4=h265db76_1:
+        CONFIG: linux_openjdk11python3.7.4=h265db76_1
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openjdk8python3.6:
-        CONFIG: linux_openjdk8python3.6
+      linux_openjdk11python3.7.5=h0371630_0:
+        CONFIG: linux_openjdk11python3.7.5=h0371630_0
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openjdk8python3.7:
-        CONFIG: linux_openjdk8python3.7
+      linux_openjdk11python3.7.6=h0371630_2:
+        CONFIG: linux_openjdk11python3.7.6=h0371630_2
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openjdk8python3.8:
-        CONFIG: linux_openjdk8python3.8
+      linux_openjdk11python3.7.6=h357f687_1:
+        CONFIG: linux_openjdk11python3.7.6=h357f687_1
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openjdk9python3.6:
-        CONFIG: linux_openjdk9python3.6
+      linux_openjdk11python3.7.6=h357f687_2:
+        CONFIG: linux_openjdk11python3.7.6=h357f687_2
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openjdk9python3.7:
-        CONFIG: linux_openjdk9python3.7
+      linux_openjdk9python3.7.3=h0371630_0:
+        CONFIG: linux_openjdk9python3.7.3=h0371630_0
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openjdk9python3.8:
-        CONFIG: linux_openjdk9python3.8
+      linux_openjdk9python3.7.3=h33d41f4_1:
+        CONFIG: linux_openjdk9python3.7.3=h33d41f4_1
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_openjdk9python3.7.3=h357f687_2:
+        CONFIG: linux_openjdk9python3.7.3=h357f687_2
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_openjdk9python3.7.3=h5b0a415_0:
+        CONFIG: linux_openjdk9python3.7.3=h5b0a415_0
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_openjdk9python3.7.4=h265db76_0:
+        CONFIG: linux_openjdk9python3.7.4=h265db76_0
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_openjdk9python3.7.4=h265db76_1:
+        CONFIG: linux_openjdk9python3.7.4=h265db76_1
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_openjdk9python3.7.5=h0371630_0:
+        CONFIG: linux_openjdk9python3.7.5=h0371630_0
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_openjdk9python3.7.6=h0371630_2:
+        CONFIG: linux_openjdk9python3.7.6=h0371630_2
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_openjdk9python3.7.6=h357f687_1:
+        CONFIG: linux_openjdk9python3.7.6=h357f687_1
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_openjdk9python3.7.6=h357f687_2:
+        CONFIG: linux_openjdk9python3.7.6=h357f687_2
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
   steps:

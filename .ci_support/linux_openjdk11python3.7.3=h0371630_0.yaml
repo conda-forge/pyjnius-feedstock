@@ -13,7 +13,7 @@ cxx_compiler_version:
 docker_image:
 - condaforge/linux-anvil-comp7
 openjdk:
-- '8'
+- '11'
 pin_run_as_build:
   openjdk:
     max_pin: x.x
@@ -21,4 +21,4 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- '3.8'
+- 3.7.3=h0371630_0
