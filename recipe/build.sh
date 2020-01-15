@@ -8,7 +8,11 @@ do
 done
 
 make
-make tests
+NOSE_PROCESSES=1 make tests || {
+    err=$?
+    find "${SRC_DIR}/tests" -name 'hs_err_pid*.log' -print -exec cat {} \;
+    exit "${err}"
+}
 pip install --no-deps .
 
 cp build/pyjnius.jar $PYJNIUS_SHARE
