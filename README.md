@@ -29,255 +29,255 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_openjdk10python3.6</td>
+              <td>linux_openjdk10python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk10python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk10python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openjdk10python3.7</td>
+              <td>linux_openjdk10python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk10python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk10python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openjdk10python3.8</td>
+              <td>linux_openjdk10python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk10python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk10python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openjdk11python3.6</td>
+              <td>linux_openjdk11python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk11python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk11python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openjdk11python3.7</td>
+              <td>linux_openjdk11python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk11python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk11python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openjdk11python3.8</td>
+              <td>linux_openjdk11python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk11python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk11python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openjdk8python3.6</td>
+              <td>linux_openjdk8python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk8python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk8python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openjdk8python3.7</td>
+              <td>linux_openjdk8python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk8python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk8python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openjdk8python3.8</td>
+              <td>linux_openjdk8python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk8python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk8python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openjdk9python3.6</td>
+              <td>linux_openjdk9python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk9python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk9python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openjdk9python3.7</td>
+              <td>linux_openjdk9python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk9python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk9python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openjdk9python3.8</td>
+              <td>linux_openjdk9python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk9python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=linux&configuration=linux_openjdk9python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk10python3.6</td>
+              <td>osx_openjdk10python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk10python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk10python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk10python3.7</td>
+              <td>osx_openjdk10python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk10python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk10python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk10python3.8</td>
+              <td>osx_openjdk10python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk10python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk10python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk11python3.6</td>
+              <td>osx_openjdk11python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk11python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk11python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk11python3.7</td>
+              <td>osx_openjdk11python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk11python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk11python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk11python3.8</td>
+              <td>osx_openjdk11python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk11python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk11python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk8python3.6</td>
+              <td>osx_openjdk8python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk8python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk8python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk8python3.7</td>
+              <td>osx_openjdk8python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk8python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk8python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk8python3.8</td>
+              <td>osx_openjdk8python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk8python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk8python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk9python3.6</td>
+              <td>osx_openjdk9python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk9python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk9python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk9python3.7</td>
+              <td>osx_openjdk9python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk9python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk9python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_openjdk9python3.8</td>
+              <td>osx_openjdk9python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk9python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=osx&configuration=osx_openjdk9python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk10python3.6</td>
+              <td>win_openjdk10python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk10python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk10python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk10python3.7</td>
+              <td>win_openjdk10python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk10python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk10python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk10python3.8</td>
+              <td>win_openjdk10python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk10python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk10python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk11python3.6</td>
+              <td>win_openjdk11python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk11python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk11python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk11python3.7</td>
+              <td>win_openjdk11python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk11python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk11python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk11python3.8</td>
+              <td>win_openjdk11python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk11python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk11python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk8python3.6</td>
+              <td>win_openjdk8python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk8python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk8python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk8python3.7</td>
+              <td>win_openjdk8python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk8python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk8python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk8python3.8</td>
+              <td>win_openjdk8python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk8python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk8python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk9python3.6</td>
+              <td>win_openjdk9python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk9python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk9python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk9python3.7</td>
+              <td>win_openjdk9python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk9python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk9python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015openjdk9python3.8</td>
+              <td>win_openjdk9python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5688&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015openjdk9python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyjnius-feedstock?branchName=master&jobName=win&configuration=win_openjdk9python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
