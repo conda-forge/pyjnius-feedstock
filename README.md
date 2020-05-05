@@ -389,4 +389,5 @@ Feedstock Maintainers
 * [@KeyWeeUsr](https://github.com/KeyWeeUsr/)
 * [@hadim](https://github.com/hadim/)
 * [@hanslovsky](https://github.com/hanslovsky/)
+* [@ctrueden](https://github.com/ctrueden/)
 
