@@ -25,6 +25,8 @@ pip install --no-deps .
 if errorlevel 1 exit 1
 copy build\pyjnius.jar "%PYJNIUS_SHARE%"
 if errorlevel 1 exit 1
-mkdir %SP_DIR%\jnius\src\org\test-classes
-copy build\test-classes %SP_DIR%\jnius\src\org\test-classes
+
+jar cf pyjnius-test.jar build\test-classes
+if errorlevel 1 exit 1
+copy pyjnius-test.jar "%PYJNIUS_SHARE%"
 if errorlevel 1 exit 1
