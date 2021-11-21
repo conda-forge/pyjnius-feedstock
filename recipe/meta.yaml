@@ -29,7 +29,7 @@ requirements:
     - six
     - setuptools
 test:
-  # will also execute run_test.py
+  # will also execute run_test.py, where we invoke the full test suite
   imports:
     - jnius
     - jnius.env
@@ -38,8 +38,6 @@ test:
     - pytest
   source_files:
     - tests/
-  commands:
-    - pytest -v tests/
 
 about:
   home: https://github.com/kivy/pyjnius

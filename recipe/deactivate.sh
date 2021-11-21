@@ -1,6 +1,0 @@
-if [ -z $CONDA_CLASSPATH_BACKUP ]; then
-    unset CLASSPATH
-else
-    export CLASSPATH="${CONDA_CLASSPATH_BACKUP}"
-    unset CONDA_CLASSPATH_BACKUP
-fi
