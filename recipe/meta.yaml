@@ -38,6 +38,13 @@ test:
     - pytest
   source_files:
     - tests/
+  commands:
+    - ls $CONDA_PREFIX/share/pyjnius/   # [not win]
+    - dir %CONDA_PREFIX%\share\pyjnius  # [win]
+    # need to extend CLASSPATH compared to activation as there are some java-based tests
+    - export CLASSPATH="$PREFIX/share/pyjnius/*"  # [not win]
+    - set "CLASSPATH=%PREFIX%\share\pyjnius\*"    # [win]
+    - pytest -v tests/
 
 about:
   home: https://github.com/kivy/pyjnius

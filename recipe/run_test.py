@@ -1,12 +1,3 @@
-import os
-import sys
-# need to do config before importing jnius
-import jnius_config
-
-our_classpath = os.path.join(os.environ["CONDA_PREFIX"], "share", "pyjnius", "*")
-print(our_classpath)
-jnius_config.set_classpath(our_classpath)
-
 import jnius
 from jnius import autoclass
 
@@ -26,8 +17,3 @@ for idx, c in enumerate( hw ):
 
 System = autoclass('java.lang.System')
 print(System.getProperty('java.version'))
-
-# need to make sure we run pytest in the same python session
-# so that the effect of jnius_config persists
-import pytest
-sys.exit(pytest.main(["-v", "tests"]))
