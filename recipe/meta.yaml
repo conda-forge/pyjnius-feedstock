@@ -7,9 +7,6 @@ package:
 source:
   url: https://github.com/kivy/pyjnius/archive/{{ version }}.zip
   sha256: a57acc0d3163ddb894a1cffa1c484e31dffe376820e609107a571e525e4dd3d6
-  patches:
-    # put test-classes in main jar (so we can ran test suite)
-    - patches/0001-put-test-classes-into-pyjnius.jar.patch
 
 build:
   number: 0
@@ -40,6 +37,9 @@ test:
   source_files:
     - tests/
   commands:
+    # need to extend CLASSPATH compared to activation as there are some java-based tests
+    - export CLASSPATH="$CLASSPATH;$PREFIX/share/pyjnius/pyjnius-test.jar"  # [not win]
+    - set "CLASSPATH=%CLASSPATH%;%PREFIX%\share\pyjnius\pyjnius-test.jar"   # [win]
     - pytest -v tests/
 
 about:
