@@ -22,7 +22,7 @@ requirements:
     - pip
     - six
     - nose
-    - ant
+    - apache-ant
   run:
     - openjdk
     - python
