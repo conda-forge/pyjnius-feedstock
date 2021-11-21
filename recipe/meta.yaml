@@ -38,8 +38,8 @@ test:
     - tests/
   commands:
     # need to set CLASSPATH correctly as there are some java-based tests
-    - export CLASSPATH="$SP_DIR/jnius/src/org/jnius/test-classes"  # [not win]
-    - set "CLASSPATH=%SP_DIR%/jnius/src/org/jnius/test-classes"    # [win]
+    - export CLASSPATH="${PREFIX}/share/pyjnius/"  # [not win]
+    - set "CLASSPATH=%PREFIX%/share/pyjnius/"      # [win]
     - pytest -v tests/
 
 about:
