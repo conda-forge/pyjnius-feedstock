@@ -28,6 +28,16 @@ requirements:
     - python
     - six
     - setuptools
+test:
+  # will also execute run_test.py
+  imports:
+    - jnius
+  requires:
+    - pytest
+  source_files:
+    - test/
+  commands:
+    - pytest -v tests/
 
 about:
   home: https://github.com/kivy/pyjnius
