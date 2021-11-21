@@ -39,13 +39,6 @@ test:
   source_files:
     - tests/
   commands:
-    # need to extend CLASSPATH compared to activation as there are some java-based tests
-    - export CLASSPATH="$CONDA_PREFIX/share/pyjnius/pyjnius-test.jar;$CLASSPATH"  # [not win]
-    - set "CLASSPATH=%CONDA_PREFIX%\share\pyjnius\pyjnius-test.jar;%CLASSPATH%"   # [win]
-    - ls $CONDA_PREFIX/share/pyjnius/   # [not win]
-    - dir %CONDA_PREFIX%\share\pyjnius  # [win]
-    - echo $CLASSPATH   # [not win]
-    - echo %CLASSPATH%  # [win]
     - pytest -v tests/
 
 about:
