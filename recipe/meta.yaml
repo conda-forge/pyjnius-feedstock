@@ -37,6 +37,9 @@ test:
   source_files:
     - tests/
   commands:
+    # need to set CLASSPATH correctly as there are some java-based tests
+    - export CLASSPATH="build/test-classes;build/classes"  # [not win]
+    - set "CLASSPATH=build/test-classes;build/classes"     # [win]
     - pytest -v tests/
 
 about:
