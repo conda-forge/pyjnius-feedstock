@@ -32,6 +32,8 @@ test:
   # will also execute run_test.py
   imports:
     - jnius
+    - jnius.env
+    - jnius_config
   requires:
     - pytest
   source_files:
