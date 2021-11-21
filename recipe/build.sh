@@ -14,5 +14,7 @@ done
 make build_ext
 
 pip install --no-deps .
-
 cp build/pyjnius.jar $PYJNIUS_SHARE
+
+jar cf pyjnius-test.jar build/test-classes
+cp pyjnius-test.jar $PYJNIUS_SHARE
