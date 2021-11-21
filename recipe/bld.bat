@@ -1,3 +1,5 @@
+@echo on
+
 setlocal EnableDelayedExpansion
 
 :: Copy the [de]activate scripts to %PREFIX%\etc\conda\[de]activate.d.
