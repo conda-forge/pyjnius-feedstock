@@ -38,10 +38,8 @@ test:
     - tests/
   commands:
     # need to set CLASSPATH correctly as there are some java-based tests
-    - export CLASSPATH="${PREFIX}/share/pyjnius/"  # [not win]
-    - set "CLASSPATH=%PREFIX%/share/pyjnius/"      # [win]
-    - ls ${CLASSPATH}  # [not win]
-    - dir %CLASSPATH%  # [not win]
+    - export CLASSPATH="$PREFIX/share/pyjnius/pyjnius-test.jar"  # [not win]
+    - set "CLASSPATH=%PREFIX%/share/pyjnius/pyjnius-test.jar"    # [win]
     - pytest -v tests/
 
 about:
