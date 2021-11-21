@@ -1,8 +1,7 @@
-{% set name = "pyjnius" %}
 {% set version = "1.4.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: pyjnius
   version: {{ version }}
 
 source:
@@ -11,7 +10,6 @@ source:
 
 build:
   number: 0
-  skip: true  # [py2k]
 
 requirements:
   build:
@@ -22,13 +20,13 @@ requirements:
     - python
     - cython
     - pip
-    - six >=1.7.0
+    - six
     - nose
     - ant
   run:
     - openjdk
     - python
-    - six >=1.7.0
+    - six
     - setuptools
 
 about:
