@@ -24,8 +24,10 @@ requirements:
     - cython
     - setuptools
   host:
-    - openjdk  {{ openjdk }}
-    - python   {{ python }}
+    - openjdk {{ openjdk }}
+    - python  {{ python }}
+    - pip         # [win]
+    - wheel       # [win]
     - setuptools  # [win]
 
 outputs:
@@ -34,8 +36,8 @@ outputs:
     script: build-pkg.bat  # [win]
     requirements:
       host:
-        - openjdk
-        - python
+        - openjdk {{ openjdk }}
+        - python  {{ python }}
         - pip
         - six
       run:
