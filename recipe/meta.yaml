@@ -26,6 +26,7 @@ requirements:
   host:
     - openjdk  {{ openjdk }}
     - python   {{ python }}
+    - setuptools  # [win]
 
 outputs:
   - name: pyjnius
@@ -43,6 +44,8 @@ outputs:
         - six
         - setuptools
     test:
+      files:
+        - test_pyjnius.py
       imports:
         - jnius
         - jnius.env
