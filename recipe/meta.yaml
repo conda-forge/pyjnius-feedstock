@@ -20,6 +20,8 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - openjdk {{ openjdk }}
+    - python  {{ python }}
     - apache-ant
     - cython
     - setuptools
@@ -67,7 +69,7 @@ outputs:
       source_files:
         - tests/
       commands:
-        # need to extend CLASSPATH compared to activation as there are some java-based tests
+        # need to extend CLASSPATH as there are some java-based tests
         - export CLASSPATH="$PREFIX/share/pyjnius/*"  # [not win]
         - set "CLASSPATH=%PREFIX%\share\pyjnius\*"    # [win]
         - pytest -v tests/
