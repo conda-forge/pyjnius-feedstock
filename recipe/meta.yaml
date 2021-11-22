@@ -22,11 +22,10 @@ requirements:
     - {{ compiler('cxx') }}
     - apache-ant
     - cython
+    - setuptools
   host:
     - openjdk  {{ openjdk }}
     - python   {{ python }}
-    - setuptools
-    - six
 
 outputs:
   - name: pyjnius
