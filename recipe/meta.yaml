@@ -24,7 +24,6 @@ requirements:
     - cython
     - pip
     - six
-    - nose
     - apache-ant
   run:
     - openjdk
