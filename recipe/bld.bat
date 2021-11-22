@@ -27,7 +27,7 @@ copy build\pyjnius.jar "%PYJNIUS_SHARE%"
 if errorlevel 1 exit 1
 
 :: pick up extra ClassFiles that are needed to run the test suite
-jar cfv pyjnius-test.jar -C build\test-classes
+jar cfv pyjnius-test.jar build\test-classes
 if errorlevel 1 exit 1
 copy pyjnius-test.jar "%PYJNIUS_SHARE%"
 if errorlevel 1 exit 1
