@@ -1,14 +1,16 @@
 {% set version = "1.4.1" %}
 
 package:
-  name: pyjnius
+  name: pyjnius-split
   version: {{ version }}
 
 source:
   url: https://github.com/kivy/pyjnius/archive/{{ version }}.zip
   sha256: a57acc0d3163ddb894a1cffa1c484e31dffe376820e609107a571e525e4dd3d6
   patches:
-    # put test-classes in main jar (so we can ran test suite)
+    # this patch makes ant create one jar including the test classes;
+    # it is only relevant for the output pyjnius-tests, as the normal
+    # package doesn't need the java classes to work
     - patches/0001-put-test-classes-into-pyjnius.jar.patch
 
 build:
@@ -18,33 +20,53 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-  host:
-    - openjdk
-    - python
+    - apache-ant
     - cython
+  host:
+    - openjdk  {{ openjdk }}
+    - python   {{ python }}
     - pip
     - six
-    - apache-ant
-  run:
-    - openjdk
-    - python
-    - six
-    - setuptools
-test:
-  # will also execute run_test.py
-  imports:
-    - jnius
-    - jnius.env
-    - jnius_config
-  requires:
-    - pytest
-  source_files:
-    - tests/
-  commands:
-    # need to extend CLASSPATH compared to activation as there are some java-based tests
-    - export CLASSPATH="$PREFIX/share/pyjnius/*"  # [not win]
-    - set "CLASSPATH=%PREFIX%\share\pyjnius\*"    # [win]
-    - pytest -v tests/
+
+outputs:
+  - name: pyjnius
+    script: build-pkg.sh   # [not win]
+    script: build-pkg.bat  # [win]
+    requirements:
+      host:
+        - openjdk
+        - python
+        - pip
+        - six
+      run:
+        - openjdk
+        - python
+        - six
+        - setuptools
+    test:
+      imports:
+        - jnius
+        - jnius.env
+        - jnius_config
+      commands:
+        - python test_pyjnius.py
+
+  - name: pyjnius-tests
+    script: build-ext.sh   # [not win]
+    script: build-ext.bat  # [win]
+    requirements:
+      run:
+        - {{ pin_subpackage('pyjnius', exact=True) }}
+    test:
+      requires:
+        - pytest
+      source_files:
+        - tests/
+      commands:
+        # need to extend CLASSPATH compared to activation as there are some java-based tests
+        - export CLASSPATH="$PREFIX/share/pyjnius/*"  # [not win]
+        - set "CLASSPATH=%PREFIX%\share\pyjnius\*"    # [win]
+        - pytest -v tests/
 
 about:
   home: https://github.com/kivy/pyjnius
@@ -59,3 +81,4 @@ extra:
     - KeyWeeUsr
     - ctrueden
     - h-vetinari
+  feedstock-name: pyjnius
