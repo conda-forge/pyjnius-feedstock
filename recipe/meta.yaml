@@ -17,14 +17,14 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - apache-ant
-    - openjdk {{ openjdk }}
-    - python  {{ python }}
+    - openjdk
+    - python
     - cython
     - pip
     - setuptools
   host:
-    - openjdk {{ openjdk }}
-    - python  {{ python }}
+    - openjdk
+    - python
     - pip
     - cython      # [win]
     - setuptools  # [win]
