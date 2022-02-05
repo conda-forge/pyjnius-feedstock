@@ -166,7 +166,6 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-pyjnius-green.svg)](https://anaconda.org/conda-forge/pyjnius) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyjnius.svg)](https://anaconda.org/conda-forge/pyjnius) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyjnius.svg)](https://anaconda.org/conda-forge/pyjnius) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyjnius.svg)](https://anaconda.org/conda-forge/pyjnius) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-pyjnius--tests-green.svg)](https://anaconda.org/conda-forge/pyjnius-tests) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyjnius-tests.svg)](https://anaconda.org/conda-forge/pyjnius-tests) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyjnius-tests.svg)](https://anaconda.org/conda-forge/pyjnius-tests) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyjnius-tests.svg)](https://anaconda.org/conda-forge/pyjnius-tests) |
 
 Installing pyjnius
 ==================
@@ -178,10 +177,10 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pyjnius, pyjnius-tests` can be installed with:
+Once the `conda-forge` channel has been enabled, `pyjnius` can be installed with:
 
 ```
-conda install pyjnius pyjnius-tests
+conda install pyjnius
 ```
 
 It is possible to list all of the versions of `pyjnius` available on your platform with:
