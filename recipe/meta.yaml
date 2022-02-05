@@ -58,8 +58,8 @@ outputs:
         - python test_pyjnius.py
 
   - name: pyjnius-tests
-    script: build-ext.sh   # [not win]
-    script: build-ext.bat  # [win]
+    script: build-tests.sh   # [not win]
+    script: build-tests.bat  # [win]
     requirements:
       run:
         - {{ pin_subpackage('pyjnius', exact=True) }}
