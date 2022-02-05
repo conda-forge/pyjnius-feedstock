@@ -25,6 +25,7 @@ requirements:
   host:
     - openjdk {{ openjdk }}
     - python  {{ python }}
+    - pip
     - cython      # [win]
     - setuptools  # [win]
     - wheel       # [win]
