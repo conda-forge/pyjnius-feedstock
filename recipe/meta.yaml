@@ -1,17 +1,12 @@
 {% set version = "1.4.1" %}
 
 package:
-  name: pyjnius-split
+  name: pyjnius
   version: {{ version }}
 
 source:
   url: https://github.com/kivy/pyjnius/archive/{{ version }}.zip
   sha256: a57acc0d3163ddb894a1cffa1c484e31dffe376820e609107a571e525e4dd3d6
-  patches:
-    # this patch makes ant create one jar including the test classes;
-    # it is only relevant for the output pyjnius-tests, as the normal
-    # package doesn't need the java classes to work
-    - patches/0001-put-test-classes-into-pyjnius.jar.patch
 
 build:
   number: 0
@@ -29,51 +24,36 @@ requirements:
   host:
     - openjdk {{ openjdk }}
     - python  {{ python }}
-    - pip         # [win]
+    - pip
     - cython      # [win]
     - wheel       # [win]
     - setuptools  # [win]
-
-outputs:
-  - name: pyjnius
-    script: build-pkg.sh   # [not win]
-    script: build-pkg.bat  # [win]
-    requirements:
-      host:
-        - openjdk {{ openjdk }}
-        - python  {{ python }}
-        - pip
-        - six
-      run:
-        - openjdk
-        - python
-        - six
-        # unfortunately, pyjinius run-depends on setuptools, see
-        # https://github.com/kivy/pyjnius/blob/1.4.1/jnius_config.py#L72
-        - setuptools
-    test:
-      files:
-        - test_pyjnius.py
-      imports:
-        - jnius
-        - jnius.env
-        - jnius_config
-      commands:
-        - python test_pyjnius.py
-
-  - name: pyjnius-tests
-    script: build-tests.sh   # [not win]
-    script: build-tests.bat  # [win]
-    requirements:
-      run:
-        - {{ pin_subpackage('pyjnius', exact=True) }}
-    test:
-      requires:
-        - pytest
-      source_files:
-        - tests/
-      commands:
-        - pytest -v tests/
+  run:
+    - openjdk
+    - python
+    - six
+    # unfortunately, pyjinius run-depends on setuptools, see
+    # https://github.com/kivy/pyjnius/blob/1.4.1/jnius_config.py#L72
+    - setuptools
+test:
+  imports:
+    - jnius
+    - jnius.env
+    - jnius_config
+  requires:
+    - pytest
+  files:
+    - test_pyjnius.py
+    # created by ant build in build.sh / bld.bat
+    - build/test-classes
+  source_files:
+    - tests/
+  commands:
+    - python test_pyjnius.py
+    # adapt CLASSPATH to pick up test classes
+    - export CLASSPATH="$CLASSPATH:build/test-classes"  # [unix]
+    - set "CLASSPATH=%CLASSPATH%;build/test-classes"    # [win]
+    - pytest -v tests/
 
 about:
   home: https://github.com/kivy/pyjnius
@@ -87,4 +67,3 @@ extra:
     - KeyWeeUsr
     - ctrueden
     - h-vetinari
-  feedstock-name: pyjnius
