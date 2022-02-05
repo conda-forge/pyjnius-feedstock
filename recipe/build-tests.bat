@@ -4,4 +4,4 @@ SET PYJNIUS_SHARE=%PREFIX%\share\pyjnius
 mkdir %PYJNIUS_SHARE%
 
 copy build\pyjnius.jar %PYJNIUS_SHARE%
-if errorlevel 1 exit 1
+if %ERRORLEVEL% neq 0 exit 1

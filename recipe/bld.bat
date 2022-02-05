@@ -5,7 +5,7 @@
 call %RECIPE_DIR%\activate.bat
 
 call ant all
-if errorlevel 1 exit 1
+if %ERRORLEVEL% neq 0 exit 1
 
 "%PYTHON%" setup.py build_ext --inplace -f
-if errorlevel 1 exit 1
+if %ERRORLEVEL% neq 0 exit 1
