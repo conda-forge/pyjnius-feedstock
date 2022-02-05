@@ -11,6 +11,11 @@ do
     cp "${RECIPE_DIR}/${CHANGE}.sh" "${PREFIX}/etc/conda/${CHANGE}.d/${PKG_NAME}_${CHANGE}.sh"
 done
 
+# compile
+make build_ext
+
+# install
 pip install --no-deps .
 
+# copy
 cp build/pyjnius.jar $PYJNIUS_SHARE
