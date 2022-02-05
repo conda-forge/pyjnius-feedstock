@@ -70,8 +70,8 @@ outputs:
         - tests/
       commands:
         # need to extend CLASSPATH as there are some java-based tests
-        - export CLASSPATH="$PREFIX/share/pyjnius/*"  # [not win]
-        - set "CLASSPATH=%PREFIX%\share\pyjnius\*"    # [win]
+        - export CLASSPATH="$PREFIX/share/pyjnius/*:$CLASSPATH"  # [not win]
+        - set "CLASSPATH=%PREFIX%\share\pyjnius\*;%CLASSPATH%"   # [win]
         - pytest -v tests/
 
 about:
