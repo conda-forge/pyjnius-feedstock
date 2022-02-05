@@ -30,6 +30,7 @@ requirements:
     - openjdk {{ openjdk }}
     - python  {{ python }}
     - pip         # [win]
+    - cython      # [win]
     - wheel       # [win]
     - setuptools  # [win]
 
