@@ -24,6 +24,7 @@ requirements:
     - python  {{ python }}
     - apache-ant
     - cython
+    - make        # [linux]
     - setuptools
   host:
     - openjdk {{ openjdk }}
