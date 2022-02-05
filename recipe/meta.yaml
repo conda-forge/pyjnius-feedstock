@@ -13,21 +13,18 @@ build:
 
 requirements:
   build:
+    - make                   # [linux]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - ant
     - openjdk {{ openjdk }}
     - python  {{ python }}
-    - apache-ant
     - cython
-    - make        # [linux]
+    - pip
     - setuptools
   host:
     - openjdk {{ openjdk }}
     - python  {{ python }}
-    - pip
-    - cython      # [win]
-    - wheel       # [win]
-    - setuptools  # [win]
   run:
     - openjdk
     - python
