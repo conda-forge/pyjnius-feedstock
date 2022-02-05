@@ -16,7 +16,7 @@ requirements:
     - make                   # [linux]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - ant
+    - apache-ant
     - openjdk {{ openjdk }}
     - python  {{ python }}
     - cython
