@@ -22,11 +22,7 @@ if errorlevel 1 exit 1
 cd tests
 if errorlevel 1 exit 1
 set CLASSPATH=..\build\test-classes;..\build\classes
-set PYTHONPATH=..
-:: TODO
-:: ignore tests for now
-:: will need to fix this in the future!
-nosetests -v
+pytest -v ..
 if errorlevel 1 exit 1
 
 :: install and copy

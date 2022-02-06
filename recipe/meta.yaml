@@ -23,8 +23,8 @@ requirements:
     - cython
     - pip
     - six >=1.7.0
-    - nose
     - ant
+    - pytest
   run:
     - openjdk
     - python

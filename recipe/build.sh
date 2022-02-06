@@ -7,12 +7,14 @@ do
     cp "${RECIPE_DIR}/${CHANGE}.sh" "${PREFIX}/etc/conda/${CHANGE}.d/${PKG_NAME}_${CHANGE}.sh"
 done
 
+# compile
 make
-NOSE_PROCESSES=1 make tests || {
-    err=$?
-    find "${SRC_DIR}/tests" -name 'hs_err_pid*.log' -print -exec cat {} \;
-    exit "${err}"
-}
+
+# test
+make tests
+
+# install
 pip install --no-deps .
 
+# copy artefact
 cp build/pyjnius.jar $PYJNIUS_SHARE
