@@ -8,7 +8,8 @@ FOR %%F IN (activate deactivate) DO (
     if %ERRORLEVEL% neq 0 exit 1
 )
 
-call %RECIPE_DIR%\activate.bat
+:: put relevant parts of JAVA_HOME on the path
+set PATH=%JAVA_HOME%\jre\bin\server;%JAVA_HOME%\bin\server;%JAVA_HOME%\bin;%PATH%
 
 SET PYJNIUS_SHARE=%PREFIX%\share\pyjnius
 mkdir "%PYJNIUS_SHARE%"
