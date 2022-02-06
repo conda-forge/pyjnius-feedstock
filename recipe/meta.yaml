@@ -45,8 +45,8 @@ test:
   commands:
     - python test_pyjnius.py
     # adapt CLASSPATH to pick up test classes
-    - export CLASSPATH="$PREFIX/share/pyjnius/*:./build/test-classes"  # [unix]
-    - set "CLASSPATH=%PREFIX%\share\pyjnius\*;build/test-classes"      # [win]
+    - export CLASSPATH="$CLASSPATH:./build/test-classes"  # [unix]
+    - set "CLASSPATH=%CLASSPATH%;build/test-classes"      # [win]
     - pytest -v tests/
 
 about:
