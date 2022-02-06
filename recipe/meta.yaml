@@ -22,13 +22,14 @@ requirements:
     - python
     - cython
     - pip
-    - six >=1.7.0
     - ant
     - pytest
   run:
     - openjdk
     - python
-    - six >=1.7.0
+    - six
+    # unfortunately, pyjinius run-depends on setuptools, see
+    # https://github.com/kivy/pyjnius/blob/1.4.1/jnius_config.py#L72
     - setuptools
 
 about:
