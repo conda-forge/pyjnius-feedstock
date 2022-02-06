@@ -20,6 +20,7 @@ requirements:
     - openjdk
     - python
     - cython
+    - pip
     - setuptools
   host:
     - openjdk
@@ -45,7 +46,7 @@ test:
   files:
     - test_pyjnius.py
   source_files:
-    # created by ant build in build.sh / bld.bat
+    # created in source directory by ant (cf. build.sh / bld.bat)
     - build/test-classes
     - tests/
   commands:
