@@ -12,7 +12,7 @@ do
 done
 
 # compile
-make build_ext
+make
 
 # install
 pip install --no-deps .
