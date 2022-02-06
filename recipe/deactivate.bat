@@ -5,3 +5,6 @@ if not "%CONDA_CLASSPATH_BACKUP%"=="" (
 ) else (
     set "CLASSPATH="
 )
+
+SET "PATH=%CONDA_PATH_BACKUP%"
+SET "CONDA_PATH_BACKUP="
