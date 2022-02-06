@@ -16,11 +16,10 @@ requirements:
     - make                   # [linux]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - apache-ant
+    - ant
     - openjdk
     - python
     - cython
-    - pip
     - setuptools
   host:
     - openjdk
