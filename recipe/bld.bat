@@ -18,13 +18,6 @@ if %ERRORLEVEL% neq 0 exit 1
 "%PYTHON%" setup.py build_ext --inplace -f
 if %ERRORLEVEL% neq 0 exit 1
 
-:: run tests
-cd tests
-set CLASSPATH=..\build\test-classes;..\build\classes
-pytest -v ..
-if %ERRORLEVEL% neq 0 exit 1
-cd ..
-
 :: install and copy
 pip install --no-deps .
 if %ERRORLEVEL% neq 0 exit 1

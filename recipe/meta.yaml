@@ -22,7 +22,6 @@ requirements:
     - cython
     - pip
     - ant
-    - pytest
   run:
     - openjdk
     - python
@@ -30,6 +29,25 @@ requirements:
     # unfortunately, pyjinius run-depends on setuptools, see
     # https://github.com/kivy/pyjnius/blob/1.4.1/jnius_config.py#L72
     - setuptools
+test:
+  imports:
+    - jnius
+    - jnius.env
+    - jnius_config
+  requires:
+    - pytest
+  files:
+    - test_pyjnius.py
+  source_files:
+    # created in source directory by ant (cf. build.sh / bld.bat)
+    - build/test-classes
+    - tests/
+  commands:
+    - python test_pyjnius.py
+    # adapt CLASSPATH to pick up test classes
+    - export CLASSPATH="$PREFIX/share/pyjnius/*:./build/test-classes"  # [unix]
+    - set "CLASSPATH=%PREFIX%\share\pyjnius\*;build/test-classes"      # [win]
+    - pytest -v tests/
 
 about:
   home: https://github.com/kivy/pyjnius

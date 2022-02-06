@@ -10,9 +10,6 @@ done
 # compile
 make
 
-# test
-make tests
-
 # install
 pip install --no-deps .
 
