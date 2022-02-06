@@ -1,3 +1,4 @@
+echo "HELLO FROM ACTIVATE.SH"
 if [[ -n "${CLASSPATH}" ]]
 then
     # only set backup if CLASSPATH is non-empty

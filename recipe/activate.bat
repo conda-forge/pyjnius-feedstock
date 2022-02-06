@@ -1,3 +1,4 @@
+echo "HELLO FROM ACTIVATE.BAT"
 if not "%CLASSPATH%"=="" (
     REM only set backup if CLASSPATH is non-empty
     set "CONDA_CLASSPATH_BACKUP=%CLASSPATH%"
