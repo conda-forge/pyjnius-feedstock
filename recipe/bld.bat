@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 FOR %%F IN (activate deactivate) DO (
     IF NOT EXIST %PREFIX%\etc\conda\%%F.d MKDIR %PREFIX%\etc\conda\%%F.d
     COPY %RECIPE_DIR%\%%F.bat %PREFIX%\etc\conda\%%F.d\%PKG_NAME%_%%F.bat
-    COPY %RECIPE_DIR%\%%F.sh %PREFIX%\etc\conda\%%F.d\%PKG_NAME%_%%F.sh
+    if %ERRORLEVEL% neq 0 exit 1
 )
 
 call %RECIPE_DIR%\activate.bat
@@ -14,20 +14,19 @@ SET PYJNIUS_SHARE=%PREFIX%\share\pyjnius
 mkdir "%PYJNIUS_SHARE%"
 
 call ant all
-if errorlevel 1 exit 1
+if %ERRORLEVEL% neq 0 exit 1
 "%PYTHON%" setup.py build_ext --inplace -f
-if errorlevel 1 exit 1
+if %ERRORLEVEL% neq 0 exit 1
 
 :: run tests
 cd tests
-if errorlevel 1 exit 1
 set CLASSPATH=..\build\test-classes;..\build\classes
 pytest -v ..
-if errorlevel 1 exit 1
+if %ERRORLEVEL% neq 0 exit 1
+cd ..
 
 :: install and copy
-cd ..
 pip install --no-deps .
-if errorlevel 1 exit 1
+if %ERRORLEVEL% neq 0 exit 1
 copy build\pyjnius.jar "%PYJNIUS_SHARE%"
-if errorlevel 1 exit 1
+if %ERRORLEVEL% neq 0 exit 1
