@@ -1,3 +1,5 @@
+@echo on
+
 setlocal EnableDelayedExpansion
 
 :: Copy the [de]activate scripts to %PREFIX%\etc\conda\[de]activate.d.
@@ -11,16 +13,21 @@ FOR %%F IN (activate deactivate) DO (
 :: put relevant parts of JAVA_HOME on the path
 set PATH=%JAVA_HOME%\jre\bin\server;%JAVA_HOME%\bin\server;%JAVA_HOME%\bin;%PATH%
 
-SET PYJNIUS_SHARE=%PREFIX%\share\pyjnius
-mkdir "%PYJNIUS_SHARE%"
+set "PYJNIUS_SHARE=%PREFIX%\share\pyjnius"
+mkdir %PYJNIUS_SHARE%
 
+:: compile java
 call ant all
 if %ERRORLEVEL% neq 0 exit 1
+
+:: compile python
 "%PYTHON%" setup.py build_ext --inplace -f
 if %ERRORLEVEL% neq 0 exit 1
 
-:: install and copy
+:: install
 pip install --no-deps .
 if %ERRORLEVEL% neq 0 exit 1
-copy build\pyjnius.jar "%PYJNIUS_SHARE%"
+
+:: copy artefact
+copy build\pyjnius.jar %PYJNIUS_SHARE%
 if %ERRORLEVEL% neq 0 exit 1
