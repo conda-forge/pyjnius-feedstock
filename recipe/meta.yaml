@@ -1,21 +1,19 @@
-{% set name = "pyjnius" %}
-{% set version = "1.2.1" %}
+{% set version = "1.4.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: pyjnius
   version: {{ version }}
 
 source:
   url: https://github.com/kivy/pyjnius/archive/{{ version }}.zip
-  sha256: 4bbae6fa9e3b7c22c2e9e76dbfe89ad3086f1992f64c420ccb259dfa1bec14ff
+  sha256: a57acc0d3163ddb894a1cffa1c484e31dffe376820e609107a571e525e4dd3d6
 
 build:
-  number: 2
-  # debug: temporarily skip everything
-  skip: true
+  number: 0
 
 requirements:
   build:
+    - make                   # [linux]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
@@ -23,20 +21,39 @@ requirements:
     - python
     - cython
     - pip
-    - six >=1.7.0
-    - nose
     - ant
   run:
     - openjdk
     - python
-    - six >=1.7.0
+    - six
+    # unfortunately, pyjinius run-depends on setuptools, see
+    # https://github.com/kivy/pyjnius/blob/1.4.1/jnius_config.py#L72
     - setuptools
+test:
+  imports:
+    - jnius
+    - jnius.env
+    - jnius_config
+  requires:
+    - pytest
+  files:
+    - test_pyjnius.py
+  source_files:
+    # created in source directory by ant (cf. build.sh / bld.bat)
+    - build/test-classes
+    - tests/
+  commands:
+    - python test_pyjnius.py
+    # adapt CLASSPATH to pick up test classes
+    - export CLASSPATH="$CLASSPATH:./build/test-classes"  # [unix]
+    - set "CLASSPATH=%CLASSPATH%;build/test-classes"      # [win]
+    - pytest -v tests/
 
 about:
   home: https://github.com/kivy/pyjnius
   license: MIT
   license_file: LICENSE
-  summary: "A Python module to access Java classes as Python classes using JNI (shared memory)"
+  summary: A Python module to access Java classes as Python classes using JNI (shared memory)
 
 extra:
   recipe-maintainers:

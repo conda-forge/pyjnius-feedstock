@@ -1,3 +1,5 @@
+@echo on
+
 setlocal EnableDelayedExpansion
 
 :: Copy the [de]activate scripts to %PREFIX%\etc\conda\[de]activate.d.
@@ -5,33 +7,27 @@ setlocal EnableDelayedExpansion
 FOR %%F IN (activate deactivate) DO (
     IF NOT EXIST %PREFIX%\etc\conda\%%F.d MKDIR %PREFIX%\etc\conda\%%F.d
     COPY %RECIPE_DIR%\%%F.bat %PREFIX%\etc\conda\%%F.d\%PKG_NAME%_%%F.bat
-    COPY %RECIPE_DIR%\%%F.sh %PREFIX%\etc\conda\%%F.d\%PKG_NAME%_%%F.sh
+    if %ERRORLEVEL% neq 0 exit 1
 )
 
-call %RECIPE_DIR%\activate.bat
+:: put relevant parts of JAVA_HOME on the path
+set PATH=%JAVA_HOME%\jre\bin\server;%JAVA_HOME%\bin\server;%JAVA_HOME%\bin;%PATH%
 
-SET PYJNIUS_SHARE=%PREFIX%\share\pyjnius
-mkdir "%PYJNIUS_SHARE%"
+set "PYJNIUS_SHARE=%PREFIX%\share\pyjnius"
+mkdir %PYJNIUS_SHARE%
 
+:: compile java
 call ant all
-if errorlevel 1 exit 1
+if %ERRORLEVEL% neq 0 exit 1
+
+:: compile python
 "%PYTHON%" setup.py build_ext --inplace -f
-if errorlevel 1 exit 1
+if %ERRORLEVEL% neq 0 exit 1
 
-:: run tests
-cd tests
-if errorlevel 1 exit 1
-set CLASSPATH=..\build\test-classes;..\build\classes
-set PYTHONPATH=..
-:: TODO
-:: ignore tests for now
-:: will need to fix this in the future!
-nosetests -v
-if errorlevel 1 exit 1
-
-:: install and copy
-cd ..
+:: install
 pip install --no-deps .
-if errorlevel 1 exit 1
-copy build\pyjnius.jar "%PYJNIUS_SHARE%"
-if errorlevel 1 exit 1
+if %ERRORLEVEL% neq 0 exit 1
+
+:: copy artefact
+copy build\pyjnius.jar %PYJNIUS_SHARE%
+if %ERRORLEVEL% neq 0 exit 1
