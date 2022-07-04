@@ -14,8 +14,14 @@ jobs:
       win_64_openjdk11python3.7.____cpython:
         CONFIG: win_64_openjdk11python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
+      win_64_openjdk11python3.8.____73_pypy:
+        CONFIG: win_64_openjdk11python3.8.____73_pypy
+        UPLOAD_PACKAGES: 'True'
       win_64_openjdk11python3.8.____cpython:
         CONFIG: win_64_openjdk11python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_openjdk11python3.9.____73_pypy:
+        CONFIG: win_64_openjdk11python3.9.____73_pypy
         UPLOAD_PACKAGES: 'True'
       win_64_openjdk11python3.9.____cpython:
         CONFIG: win_64_openjdk11python3.9.____cpython
@@ -26,8 +32,14 @@ jobs:
       win_64_openjdk8python3.7.____cpython:
         CONFIG: win_64_openjdk8python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
+      win_64_openjdk8python3.8.____73_pypy:
+        CONFIG: win_64_openjdk8python3.8.____73_pypy
+        UPLOAD_PACKAGES: 'True'
       win_64_openjdk8python3.8.____cpython:
         CONFIG: win_64_openjdk8python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_openjdk8python3.9.____73_pypy:
+        CONFIG: win_64_openjdk8python3.9.____73_pypy
         UPLOAD_PACKAGES: 'True'
       win_64_openjdk8python3.9.____cpython:
         CONFIG: win_64_openjdk8python3.9.____cpython
