@@ -19,7 +19,7 @@ requirements:
   host:
     - openjdk
     - python
-    - cython
+    - cython <3
     - pip
     - ant
   run:
