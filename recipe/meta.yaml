@@ -1,4 +1,4 @@
-{% set version = "1.6.0" %}
+{% set version = "1.6.1" %}
 
 package:
   name: pyjnius
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/kivy/pyjnius/archive/{{ version }}.zip
-  sha256: c2e6356921acd7cd2d8298fe462534abb917dea55f54ff17034a10c2440bcfa7
+  sha256: 842df6799d2011cba761b28ce265541456d4a39c9d70786871ed8f66880606d3
 
 build:
   number: 0
