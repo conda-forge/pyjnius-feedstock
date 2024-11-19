@@ -1,5 +1,5 @@
-provider:
-  win: azure
+azure:
+  max_parallel: 30
 conda_forge_output_validation: true
 github:
   branch_name: main
