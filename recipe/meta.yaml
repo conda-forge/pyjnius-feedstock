@@ -1,5 +1,9 @@
 {% set version = "1.6.1" %}
 
+{% if openjdk is undefined %}
+{% set openjdk = "*" %}
+{% endif %}
+
 package:
   name: pyjnius
   version: {{ version }}
@@ -10,6 +14,7 @@ source:
 
 build:
   number: 1
+  string: py{{ CONDA_PY }}jdk{{ openjdk|int or "latest" }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
 
 requirements:
   build:
