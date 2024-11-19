@@ -20,16 +20,13 @@ requirements:
   host:
     - openjdk
     - python
-    - cython <3
+    - cython
     - pip
+    - setuptools
     - ant
   run:
     - openjdk
     - python
-    - six
-    # unfortunately, pyjinius run-depends on setuptools, see
-    # https://github.com/kivy/pyjnius/blob/1.4.1/jnius_config.py#L72
-    - setuptools
 test:
   imports:
     - jnius
