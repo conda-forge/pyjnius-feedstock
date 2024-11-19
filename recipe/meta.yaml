@@ -9,12 +9,13 @@ source:
   sha256: 842df6799d2011cba761b28ce265541456d4a39c9d70786871ed8f66880606d3
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
     - make                   # [linux]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - openjdk
