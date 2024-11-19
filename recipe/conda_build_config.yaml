@@ -1,6 +1,11 @@
 openjdk:
-  - 8
+  # newest
+  - "*"
+  # LTS
+  - 21
+  - 17
   - 11
+  - 8
 
 pin_run_as_build:
   openjdk:

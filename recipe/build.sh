@@ -11,6 +11,11 @@ do
     cp "${RECIPE_DIR}/${CHANGE}.sh" "${PREFIX}/etc/conda/${CHANGE}.d/${PKG_NAME}_${CHANGE}.sh"
 done
 
+if [[ "${openjdk}" == "21" || "${openjdk}" == "*" ]]; then
+    # need to update JAVA_TARGET; 1.7 not supported anymore
+    sed -i.bak "s/'1.7'/'8'/g" Makefile
+fi
+
 # compile
 make
 

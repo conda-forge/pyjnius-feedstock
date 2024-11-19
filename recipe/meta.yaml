@@ -1,5 +1,9 @@
 {% set version = "1.6.1" %}
 
+{% if openjdk is undefined %}
+{% set openjdk = "*" %}
+{% endif %}
+
 package:
   name: pyjnius
   version: {{ version }}
@@ -9,26 +13,26 @@ source:
   sha256: 842df6799d2011cba761b28ce265541456d4a39c9d70786871ed8f66880606d3
 
 build:
-  number: 0
+  number: 1
+  string: py{{ CONDA_PY }}jdk{{ openjdk|int or "latest" }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
 
 requirements:
   build:
-    - make                   # [linux]
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - make                   # [unix]
+    - sed                    # [unix]
   host:
     - openjdk
     - python
-    - cython <3
+    - cython
     - pip
+    - setuptools
     - ant
   run:
     - openjdk
     - python
-    - six
-    # unfortunately, pyjinius run-depends on setuptools, see
-    # https://github.com/kivy/pyjnius/blob/1.4.1/jnius_config.py#L72
-    - setuptools
 test:
   imports:
     - jnius
@@ -47,7 +51,13 @@ test:
     # adapt CLASSPATH to pick up test classes
     - export CLASSPATH="$CLASSPATH:./build/test-classes"  # [unix]
     - set "CLASSPATH=%CLASSPATH%;build/test-classes"      # [win]
-    - pytest -v tests/
+    {% set tests_to_skip = "_not_a_real_test" %}
+    {% if (openjdk|int or 21) >= 21 %}
+    # skip a test that doesn't work with newer jdk, see
+    # https://github.com/kivy/pyjnius/issues/736
+    {% set tests_to_skip = tests_to_skip + " or test_hierharchy_arraylist" %}
+    {% endif %}
+    - pytest -v tests/ -k "not ({{ tests_to_skip }})"
 
 about:
   home: https://github.com/kivy/pyjnius
