@@ -22,6 +22,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - make                   # [unix]
+    - sed                    # [unix]
   host:
     - openjdk
     - python
