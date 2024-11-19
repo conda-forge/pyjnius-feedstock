@@ -28,6 +28,46 @@ jobs:
         CONFIG: linux_64_openjdk11python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk17python3.10.____cpython:
+        CONFIG: linux_64_openjdk17python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk17python3.11.____cpython:
+        CONFIG: linux_64_openjdk17python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk17python3.12.____cpython:
+        CONFIG: linux_64_openjdk17python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk17python3.13.____cp313:
+        CONFIG: linux_64_openjdk17python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk17python3.9.____cpython:
+        CONFIG: linux_64_openjdk17python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk21python3.10.____cpython:
+        CONFIG: linux_64_openjdk21python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk21python3.11.____cpython:
+        CONFIG: linux_64_openjdk21python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk21python3.12.____cpython:
+        CONFIG: linux_64_openjdk21python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk21python3.13.____cp313:
+        CONFIG: linux_64_openjdk21python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk21python3.9.____cpython:
+        CONFIG: linux_64_openjdk21python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_openjdk8python3.10.____cpython:
         CONFIG: linux_64_openjdk8python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -48,6 +88,27 @@ jobs:
         CONFIG: linux_64_openjdk8python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk_python3.10.____cpython:
+        CONFIG: linux_64_openjdk_python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk_python3.11.____cpython:
+        CONFIG: linux_64_openjdk_python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk_python3.12.____cpython:
+        CONFIG: linux_64_openjdk_python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk_python3.13.____cp313:
+        CONFIG: linux_64_openjdk_python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk_python3.9.____cpython:
+        CONFIG: linux_64_openjdk_python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+    maxParallel: 10
   timeoutInMinutes: 360
   variables: {}
 
