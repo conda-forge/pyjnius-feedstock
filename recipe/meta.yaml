@@ -18,10 +18,10 @@ build:
 
 requirements:
   build:
-    - make                   # [linux]
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
+    - make                   # [unix]
   host:
     - openjdk
     - python
