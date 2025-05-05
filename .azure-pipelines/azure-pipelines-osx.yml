@@ -83,7 +83,7 @@ jobs:
       osx_64_openjdk_python3.9.____cpython:
         CONFIG: osx_64_openjdk_python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
-    maxParallel: 10
+    maxParallel: 6
   timeoutInMinutes: 360
   variables: {}
 
