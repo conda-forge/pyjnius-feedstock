@@ -1,3 +1,9 @@
+# GCC 14 got stricter about something
+c_compiler_version:         # [linux]
+  - 13                      # [linux]
+cxx_compiler_version:       # [linux]
+  - 13                      # [linux]
+
 openjdk:
   # newest
   - "*"
