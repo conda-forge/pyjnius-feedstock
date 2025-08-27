@@ -13,7 +13,7 @@ source:
   sha256: 842df6799d2011cba761b28ce265541456d4a39c9d70786871ed8f66880606d3
 
 build:
-  number: 2
+  number: 3
   string: py{{ CONDA_PY }}jdk{{ openjdk|int or "latest" }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
 
 requirements:
