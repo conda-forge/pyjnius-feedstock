@@ -20,8 +20,8 @@ jobs:
       osx_64_openjdk11python3.13.____cp313:
         CONFIG: osx_64_openjdk11python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-      osx_64_openjdk11python3.9.____cpython:
-        CONFIG: osx_64_openjdk11python3.9.____cpython
+      osx_64_openjdk11python3.14.____cp314:
+        CONFIG: osx_64_openjdk11python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
       osx_64_openjdk17python3.10.____cpython:
         CONFIG: osx_64_openjdk17python3.10.____cpython
@@ -35,8 +35,8 @@ jobs:
       osx_64_openjdk17python3.13.____cp313:
         CONFIG: osx_64_openjdk17python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-      osx_64_openjdk17python3.9.____cpython:
-        CONFIG: osx_64_openjdk17python3.9.____cpython
+      osx_64_openjdk17python3.14.____cp314:
+        CONFIG: osx_64_openjdk17python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
       osx_64_openjdk21python3.10.____cpython:
         CONFIG: osx_64_openjdk21python3.10.____cpython
@@ -50,8 +50,8 @@ jobs:
       osx_64_openjdk21python3.13.____cp313:
         CONFIG: osx_64_openjdk21python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-      osx_64_openjdk21python3.9.____cpython:
-        CONFIG: osx_64_openjdk21python3.9.____cpython
+      osx_64_openjdk21python3.14.____cp314:
+        CONFIG: osx_64_openjdk21python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
       osx_64_openjdk8python3.10.____cpython:
         CONFIG: osx_64_openjdk8python3.10.____cpython
@@ -65,8 +65,8 @@ jobs:
       osx_64_openjdk8python3.13.____cp313:
         CONFIG: osx_64_openjdk8python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-      osx_64_openjdk8python3.9.____cpython:
-        CONFIG: osx_64_openjdk8python3.9.____cpython
+      osx_64_openjdk8python3.14.____cp314:
+        CONFIG: osx_64_openjdk8python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
       osx_64_openjdk_python3.10.____cpython:
         CONFIG: osx_64_openjdk_python3.10.____cpython
@@ -80,8 +80,8 @@ jobs:
       osx_64_openjdk_python3.13.____cp313:
         CONFIG: osx_64_openjdk_python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-      osx_64_openjdk_python3.9.____cpython:
-        CONFIG: osx_64_openjdk_python3.9.____cpython
+      osx_64_openjdk_python3.14.____cp314:
+        CONFIG: osx_64_openjdk_python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
     maxParallel: 8
   timeoutInMinutes: 360
