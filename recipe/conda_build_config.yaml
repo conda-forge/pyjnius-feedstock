@@ -1,6 +1,17 @@
+# GCC 14 got stricter about something
+c_compiler_version:         # [linux]
+  - 13                      # [linux]
+cxx_compiler_version:       # [linux]
+  - 13                      # [linux]
+
 openjdk:
-  - 8
+  # newest
+  - "*"
+  # LTS
+  - 21
+  - 17
   - 11
+  - 8
 
 pin_run_as_build:
   openjdk:
