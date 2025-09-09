@@ -55,13 +55,7 @@ test:
     # adapt CLASSPATH to pick up test classes
     - export CLASSPATH="$CLASSPATH:./build/test-classes"  # [unix]
     - set "CLASSPATH=%CLASSPATH%;build/test-classes"      # [win]
-    {% set tests_to_skip = "_not_a_real_test" %}
-    {% if (openjdk|int or 21) >= 21 %}
-    # skip a test that doesn't work with newer jdk, see
-    # https://github.com/kivy/pyjnius/issues/736
-    {% set tests_to_skip = tests_to_skip + " or test_hierharchy_arraylist" %}
-    {% endif %}
-    - pytest -v tests/ -k "not ({{ tests_to_skip }})"
+    - pytest -v tests/
 
 about:
   home: https://github.com/kivy/pyjnius
