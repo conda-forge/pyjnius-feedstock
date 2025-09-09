@@ -1,4 +1,4 @@
-{% set version = "1.6.1" %}
+{% set version = "1.7.0" %}
 
 {% if openjdk is undefined %}
 {% set openjdk = "*" %}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://github.com/kivy/pyjnius/archive/{{ version }}.zip
-  sha256: 842df6799d2011cba761b28ce265541456d4a39c9d70786871ed8f66880606d3
+  sha256: 0a0655257ae0b11abb949665c0ed88eb6b5b0b25d9a78271c32f8f81ffb5d977
 
 build:
-  number: 3
+  number: 0
   string: py{{ CONDA_PY }}jdk{{ openjdk|int or "latest" }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   {% if (openjdk|int or 99) == 11 %}
   # unclear but reproducible segfaults for the oldest possible combination on windows
@@ -30,7 +30,7 @@ requirements:
   host:
     - openjdk
     - python
-    - cython <3.1.0    # >=3.1.0 breaks, pyjnius requires upstream fix
+    - cython >=3.1.2
     - pip
     - setuptools
     - ant
@@ -55,13 +55,7 @@ test:
     # adapt CLASSPATH to pick up test classes
     - export CLASSPATH="$CLASSPATH:./build/test-classes"  # [unix]
     - set "CLASSPATH=%CLASSPATH%;build/test-classes"      # [win]
-    {% set tests_to_skip = "_not_a_real_test" %}
-    {% if (openjdk|int or 21) >= 21 %}
-    # skip a test that doesn't work with newer jdk, see
-    # https://github.com/kivy/pyjnius/issues/736
-    {% set tests_to_skip = tests_to_skip + " or test_hierharchy_arraylist" %}
-    {% endif %}
-    - pytest -v tests/ -k "not ({{ tests_to_skip }})"
+    - pytest -v tests/
 
 about:
   home: https://github.com/kivy/pyjnius
