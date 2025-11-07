@@ -13,7 +13,7 @@ source:
   sha256: 0a0655257ae0b11abb949665c0ed88eb6b5b0b25d9a78271c32f8f81ffb5d977
 
 build:
-  number: 0
+  number: 1
   string: py{{ CONDA_PY }}jdk{{ openjdk|int or "latest" }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   {% if (openjdk|int or 99) == 11 %}
   # unclear but reproducible segfaults for the oldest possible combination on windows
