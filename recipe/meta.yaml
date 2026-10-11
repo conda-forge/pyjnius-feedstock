@@ -1,4 +1,4 @@
-{% set version = "1.7.0" %}
+{% set version = "1.9.0" %}
 
 {% if openjdk is undefined %}
 {% set openjdk = "*" %}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://github.com/kivy/pyjnius/archive/{{ version }}.zip
-  sha256: 0a0655257ae0b11abb949665c0ed88eb6b5b0b25d9a78271c32f8f81ffb5d977
+  sha256: da8aad44c6deb33e8479a19cc98d9eca34e14fb98c3be0d7658b34b9c8dd748a
 
 build:
-  number: 1
+  number: 0
   string: py{{ CONDA_PY }}jdk{{ openjdk|int or "latest" }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   {% if (openjdk|int or 99) == 11 %}
   # unclear but reproducible segfaults for the oldest possible combination on windows
