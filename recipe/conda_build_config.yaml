@@ -4,9 +4,10 @@ c_compiler_version:         # [linux]
 cxx_compiler_version:       # [linux]
   - 13                      # [linux]
 
+# changes need to be reflected in build.sh
 openjdk:
   # newest
-  - "*"
+  - 27
   # LTS
   - 25
   - 21
