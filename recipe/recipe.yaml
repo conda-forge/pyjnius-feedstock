@@ -53,6 +53,7 @@ tests:
         - pytest
     files:
       source:
+        - .github/scripts/
         # created in source directory by ant (cf. build.sh / build.bat)
         - build/test-classes
         - tests/
