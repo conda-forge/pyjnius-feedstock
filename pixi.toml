@@ -218,6 +218,51 @@ description = "Debug pyjnius-feedstock with variant linux_64_openjdk25python3.15
 [feature.build.tasks."inspect-linux_64_openjdk25python3.15.____cp315"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk25python3.15.____cp315.yaml"
 description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk25python3.15.____cp315"
+[feature.build.tasks."build-linux_64_openjdk27python3.11.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_openjdk27python3.11.____cpython.yaml --target-platform linux-64"
+description = "Build pyjnius-feedstock with variant linux_64_openjdk27python3.11.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_openjdk27python3.11.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_openjdk27python3.11.____cpython.yaml --target-platform linux-64"
+description = "Debug pyjnius-feedstock with variant linux_64_openjdk27python3.11.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_openjdk27python3.11.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk27python3.11.____cpython.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk27python3.11.____cpython"
+[feature.build.tasks."build-linux_64_openjdk27python3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_openjdk27python3.12.____cpython.yaml --target-platform linux-64"
+description = "Build pyjnius-feedstock with variant linux_64_openjdk27python3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_openjdk27python3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_openjdk27python3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug pyjnius-feedstock with variant linux_64_openjdk27python3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_openjdk27python3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk27python3.12.____cpython.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk27python3.12.____cpython"
+[feature.build.tasks."build-linux_64_openjdk27python3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_openjdk27python3.13.____cp313.yaml --target-platform linux-64"
+description = "Build pyjnius-feedstock with variant linux_64_openjdk27python3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_openjdk27python3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_openjdk27python3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug pyjnius-feedstock with variant linux_64_openjdk27python3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_openjdk27python3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk27python3.13.____cp313.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk27python3.13.____cp313"
+[feature.build.tasks."build-linux_64_openjdk27python3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_openjdk27python3.14.____cp314.yaml --target-platform linux-64"
+description = "Build pyjnius-feedstock with variant linux_64_openjdk27python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_openjdk27python3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_openjdk27python3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug pyjnius-feedstock with variant linux_64_openjdk27python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_openjdk27python3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk27python3.14.____cp314.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk27python3.14.____cp314"
+[feature.build.tasks."build-linux_64_openjdk27python3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_openjdk27python3.15.____cp315.yaml --target-platform linux-64"
+description = "Build pyjnius-feedstock with variant linux_64_openjdk27python3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_openjdk27python3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_openjdk27python3.15.____cp315.yaml --target-platform linux-64"
+description = "Debug pyjnius-feedstock with variant linux_64_openjdk27python3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_openjdk27python3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk27python3.15.____cp315.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk27python3.15.____cp315"
 [feature.build.tasks."build-linux_64_openjdk8python3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_openjdk8python3.11.____cpython.yaml --target-platform linux-64"
 description = "Build pyjnius-feedstock with variant linux_64_openjdk8python3.11.____cpython directly (without setup scripts)"
@@ -263,51 +308,6 @@ description = "Debug pyjnius-feedstock with variant linux_64_openjdk8python3.15.
 [feature.build.tasks."inspect-linux_64_openjdk8python3.15.____cp315"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk8python3.15.____cp315.yaml"
 description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk8python3.15.____cp315"
-[feature.build.tasks."build-linux_64_openjdk_python3.11.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_openjdk_python3.11.____cpython.yaml --target-platform linux-64"
-description = "Build pyjnius-feedstock with variant linux_64_openjdk_python3.11.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_openjdk_python3.11.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_openjdk_python3.11.____cpython.yaml --target-platform linux-64"
-description = "Debug pyjnius-feedstock with variant linux_64_openjdk_python3.11.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_openjdk_python3.11.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk_python3.11.____cpython.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk_python3.11.____cpython"
-[feature.build.tasks."build-linux_64_openjdk_python3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_openjdk_python3.12.____cpython.yaml --target-platform linux-64"
-description = "Build pyjnius-feedstock with variant linux_64_openjdk_python3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_openjdk_python3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_openjdk_python3.12.____cpython.yaml --target-platform linux-64"
-description = "Debug pyjnius-feedstock with variant linux_64_openjdk_python3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_openjdk_python3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk_python3.12.____cpython.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk_python3.12.____cpython"
-[feature.build.tasks."build-linux_64_openjdk_python3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_openjdk_python3.13.____cp313.yaml --target-platform linux-64"
-description = "Build pyjnius-feedstock with variant linux_64_openjdk_python3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_openjdk_python3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_openjdk_python3.13.____cp313.yaml --target-platform linux-64"
-description = "Debug pyjnius-feedstock with variant linux_64_openjdk_python3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_openjdk_python3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk_python3.13.____cp313.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk_python3.13.____cp313"
-[feature.build.tasks."build-linux_64_openjdk_python3.14.____cp314"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_openjdk_python3.14.____cp314.yaml --target-platform linux-64"
-description = "Build pyjnius-feedstock with variant linux_64_openjdk_python3.14.____cp314 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_openjdk_python3.14.____cp314"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_openjdk_python3.14.____cp314.yaml --target-platform linux-64"
-description = "Debug pyjnius-feedstock with variant linux_64_openjdk_python3.14.____cp314 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_openjdk_python3.14.____cp314"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk_python3.14.____cp314.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk_python3.14.____cp314"
-[feature.build.tasks."build-linux_64_openjdk_python3.15.____cp315"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_openjdk_python3.15.____cp315.yaml --target-platform linux-64"
-description = "Build pyjnius-feedstock with variant linux_64_openjdk_python3.15.____cp315 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_openjdk_python3.15.____cp315"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_openjdk_python3.15.____cp315.yaml --target-platform linux-64"
-description = "Debug pyjnius-feedstock with variant linux_64_openjdk_python3.15.____cp315 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_openjdk_python3.15.____cp315"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_openjdk_python3.15.____cp315.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant linux_64_openjdk_python3.15.____cp315"
 [feature.build.tasks."build-linux_aarch64_openjdk11python3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk11python3.11.____cpython.yaml --target-platform linux-aarch64"
 description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk11python3.11.____cpython directly (without setup scripts)"
@@ -488,6 +488,51 @@ description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk25pytho
 [feature.build.tasks."inspect-linux_aarch64_openjdk25python3.15.____cp315"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk25python3.15.____cp315.yaml"
 description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk25python3.15.____cp315"
+[feature.build.tasks."build-linux_aarch64_openjdk27python3.11.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk27python3.11.____cpython.yaml --target-platform linux-aarch64"
+description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk27python3.11.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_openjdk27python3.11.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_openjdk27python3.11.____cpython.yaml --target-platform linux-aarch64"
+description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk27python3.11.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_openjdk27python3.11.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk27python3.11.____cpython.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk27python3.11.____cpython"
+[feature.build.tasks."build-linux_aarch64_openjdk27python3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk27python3.12.____cpython.yaml --target-platform linux-aarch64"
+description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk27python3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_openjdk27python3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_openjdk27python3.12.____cpython.yaml --target-platform linux-aarch64"
+description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk27python3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_openjdk27python3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk27python3.12.____cpython.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk27python3.12.____cpython"
+[feature.build.tasks."build-linux_aarch64_openjdk27python3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk27python3.13.____cp313.yaml --target-platform linux-aarch64"
+description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk27python3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_openjdk27python3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_openjdk27python3.13.____cp313.yaml --target-platform linux-aarch64"
+description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk27python3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_openjdk27python3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk27python3.13.____cp313.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk27python3.13.____cp313"
+[feature.build.tasks."build-linux_aarch64_openjdk27python3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk27python3.14.____cp314.yaml --target-platform linux-aarch64"
+description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk27python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_openjdk27python3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_openjdk27python3.14.____cp314.yaml --target-platform linux-aarch64"
+description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk27python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_openjdk27python3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk27python3.14.____cp314.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk27python3.14.____cp314"
+[feature.build.tasks."build-linux_aarch64_openjdk27python3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk27python3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk27python3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_openjdk27python3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_openjdk27python3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk27python3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_openjdk27python3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk27python3.15.____cp315.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk27python3.15.____cp315"
 [feature.build.tasks."build-linux_aarch64_openjdk8python3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk8python3.11.____cpython.yaml --target-platform linux-aarch64"
 description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk8python3.11.____cpython directly (without setup scripts)"
@@ -533,51 +578,6 @@ description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk8python
 [feature.build.tasks."inspect-linux_aarch64_openjdk8python3.15.____cp315"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk8python3.15.____cp315.yaml"
 description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk8python3.15.____cp315"
-[feature.build.tasks."build-linux_aarch64_openjdk_python3.11.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk_python3.11.____cpython.yaml --target-platform linux-aarch64"
-description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk_python3.11.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_openjdk_python3.11.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_openjdk_python3.11.____cpython.yaml --target-platform linux-aarch64"
-description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk_python3.11.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_openjdk_python3.11.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk_python3.11.____cpython.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk_python3.11.____cpython"
-[feature.build.tasks."build-linux_aarch64_openjdk_python3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk_python3.12.____cpython.yaml --target-platform linux-aarch64"
-description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk_python3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_openjdk_python3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_openjdk_python3.12.____cpython.yaml --target-platform linux-aarch64"
-description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk_python3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_openjdk_python3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk_python3.12.____cpython.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk_python3.12.____cpython"
-[feature.build.tasks."build-linux_aarch64_openjdk_python3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk_python3.13.____cp313.yaml --target-platform linux-aarch64"
-description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk_python3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_openjdk_python3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_openjdk_python3.13.____cp313.yaml --target-platform linux-aarch64"
-description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk_python3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_openjdk_python3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk_python3.13.____cp313.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk_python3.13.____cp313"
-[feature.build.tasks."build-linux_aarch64_openjdk_python3.14.____cp314"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk_python3.14.____cp314.yaml --target-platform linux-aarch64"
-description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk_python3.14.____cp314 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_openjdk_python3.14.____cp314"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_openjdk_python3.14.____cp314.yaml --target-platform linux-aarch64"
-description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk_python3.14.____cp314 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_openjdk_python3.14.____cp314"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk_python3.14.____cp314.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk_python3.14.____cp314"
-[feature.build.tasks."build-linux_aarch64_openjdk_python3.15.____cp315"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_openjdk_python3.15.____cp315.yaml --target-platform linux-aarch64"
-description = "Build pyjnius-feedstock with variant linux_aarch64_openjdk_python3.15.____cp315 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_openjdk_python3.15.____cp315"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_openjdk_python3.15.____cp315.yaml --target-platform linux-aarch64"
-description = "Debug pyjnius-feedstock with variant linux_aarch64_openjdk_python3.15.____cp315 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_openjdk_python3.15.____cp315"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_openjdk_python3.15.____cp315.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant linux_aarch64_openjdk_python3.15.____cp315"
 [feature.build.tasks."build-osx_64_openjdk11python3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk11python3.11.____cpython.yaml --target-platform osx-64"
 description = "Build pyjnius-feedstock with variant osx_64_openjdk11python3.11.____cpython directly (without setup scripts)"
@@ -758,6 +758,51 @@ description = "Debug pyjnius-feedstock with variant osx_64_openjdk25python3.15._
 [feature.build.tasks."inspect-osx_64_openjdk25python3.15.____cp315"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk25python3.15.____cp315.yaml"
 description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk25python3.15.____cp315"
+[feature.build.tasks."build-osx_64_openjdk27python3.11.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk27python3.11.____cpython.yaml --target-platform osx-64"
+description = "Build pyjnius-feedstock with variant osx_64_openjdk27python3.11.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_openjdk27python3.11.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_openjdk27python3.11.____cpython.yaml --target-platform osx-64"
+description = "Debug pyjnius-feedstock with variant osx_64_openjdk27python3.11.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_openjdk27python3.11.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk27python3.11.____cpython.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk27python3.11.____cpython"
+[feature.build.tasks."build-osx_64_openjdk27python3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk27python3.12.____cpython.yaml --target-platform osx-64"
+description = "Build pyjnius-feedstock with variant osx_64_openjdk27python3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_openjdk27python3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_openjdk27python3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug pyjnius-feedstock with variant osx_64_openjdk27python3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_openjdk27python3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk27python3.12.____cpython.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk27python3.12.____cpython"
+[feature.build.tasks."build-osx_64_openjdk27python3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk27python3.13.____cp313.yaml --target-platform osx-64"
+description = "Build pyjnius-feedstock with variant osx_64_openjdk27python3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_openjdk27python3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_openjdk27python3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug pyjnius-feedstock with variant osx_64_openjdk27python3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_openjdk27python3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk27python3.13.____cp313.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk27python3.13.____cp313"
+[feature.build.tasks."build-osx_64_openjdk27python3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk27python3.14.____cp314.yaml --target-platform osx-64"
+description = "Build pyjnius-feedstock with variant osx_64_openjdk27python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_openjdk27python3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_openjdk27python3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug pyjnius-feedstock with variant osx_64_openjdk27python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_openjdk27python3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk27python3.14.____cp314.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk27python3.14.____cp314"
+[feature.build.tasks."build-osx_64_openjdk27python3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk27python3.15.____cp315.yaml --target-platform osx-64"
+description = "Build pyjnius-feedstock with variant osx_64_openjdk27python3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_openjdk27python3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_openjdk27python3.15.____cp315.yaml --target-platform osx-64"
+description = "Debug pyjnius-feedstock with variant osx_64_openjdk27python3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_openjdk27python3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk27python3.15.____cp315.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk27python3.15.____cp315"
 [feature.build.tasks."build-osx_64_openjdk8python3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk8python3.11.____cpython.yaml --target-platform osx-64"
 description = "Build pyjnius-feedstock with variant osx_64_openjdk8python3.11.____cpython directly (without setup scripts)"
@@ -803,51 +848,6 @@ description = "Debug pyjnius-feedstock with variant osx_64_openjdk8python3.15.__
 [feature.build.tasks."inspect-osx_64_openjdk8python3.15.____cp315"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk8python3.15.____cp315.yaml"
 description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk8python3.15.____cp315"
-[feature.build.tasks."build-osx_64_openjdk_python3.11.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk_python3.11.____cpython.yaml --target-platform osx-64"
-description = "Build pyjnius-feedstock with variant osx_64_openjdk_python3.11.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_openjdk_python3.11.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_openjdk_python3.11.____cpython.yaml --target-platform osx-64"
-description = "Debug pyjnius-feedstock with variant osx_64_openjdk_python3.11.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_openjdk_python3.11.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk_python3.11.____cpython.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk_python3.11.____cpython"
-[feature.build.tasks."build-osx_64_openjdk_python3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk_python3.12.____cpython.yaml --target-platform osx-64"
-description = "Build pyjnius-feedstock with variant osx_64_openjdk_python3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_openjdk_python3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_openjdk_python3.12.____cpython.yaml --target-platform osx-64"
-description = "Debug pyjnius-feedstock with variant osx_64_openjdk_python3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_openjdk_python3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk_python3.12.____cpython.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk_python3.12.____cpython"
-[feature.build.tasks."build-osx_64_openjdk_python3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk_python3.13.____cp313.yaml --target-platform osx-64"
-description = "Build pyjnius-feedstock with variant osx_64_openjdk_python3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_openjdk_python3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_openjdk_python3.13.____cp313.yaml --target-platform osx-64"
-description = "Debug pyjnius-feedstock with variant osx_64_openjdk_python3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_openjdk_python3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk_python3.13.____cp313.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk_python3.13.____cp313"
-[feature.build.tasks."build-osx_64_openjdk_python3.14.____cp314"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk_python3.14.____cp314.yaml --target-platform osx-64"
-description = "Build pyjnius-feedstock with variant osx_64_openjdk_python3.14.____cp314 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_openjdk_python3.14.____cp314"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_openjdk_python3.14.____cp314.yaml --target-platform osx-64"
-description = "Debug pyjnius-feedstock with variant osx_64_openjdk_python3.14.____cp314 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_openjdk_python3.14.____cp314"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk_python3.14.____cp314.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk_python3.14.____cp314"
-[feature.build.tasks."build-osx_64_openjdk_python3.15.____cp315"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_openjdk_python3.15.____cp315.yaml --target-platform osx-64"
-description = "Build pyjnius-feedstock with variant osx_64_openjdk_python3.15.____cp315 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_openjdk_python3.15.____cp315"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_openjdk_python3.15.____cp315.yaml --target-platform osx-64"
-description = "Debug pyjnius-feedstock with variant osx_64_openjdk_python3.15.____cp315 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_openjdk_python3.15.____cp315"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_openjdk_python3.15.____cp315.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant osx_64_openjdk_python3.15.____cp315"
 [feature.build.tasks."build-osx_arm64_openjdk11python3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk11python3.11.____cpython.yaml --target-platform osx-arm64"
 description = "Build pyjnius-feedstock with variant osx_arm64_openjdk11python3.11.____cpython directly (without setup scripts)"
@@ -1028,6 +1028,51 @@ description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk25python3.1
 [feature.build.tasks."inspect-osx_arm64_openjdk25python3.15.____cp315"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk25python3.15.____cp315.yaml"
 description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk25python3.15.____cp315"
+[feature.build.tasks."build-osx_arm64_openjdk27python3.11.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk27python3.11.____cpython.yaml --target-platform osx-arm64"
+description = "Build pyjnius-feedstock with variant osx_arm64_openjdk27python3.11.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_openjdk27python3.11.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_openjdk27python3.11.____cpython.yaml --target-platform osx-arm64"
+description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk27python3.11.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_openjdk27python3.11.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk27python3.11.____cpython.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk27python3.11.____cpython"
+[feature.build.tasks."build-osx_arm64_openjdk27python3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk27python3.12.____cpython.yaml --target-platform osx-arm64"
+description = "Build pyjnius-feedstock with variant osx_arm64_openjdk27python3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_openjdk27python3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_openjdk27python3.12.____cpython.yaml --target-platform osx-arm64"
+description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk27python3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_openjdk27python3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk27python3.12.____cpython.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk27python3.12.____cpython"
+[feature.build.tasks."build-osx_arm64_openjdk27python3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk27python3.13.____cp313.yaml --target-platform osx-arm64"
+description = "Build pyjnius-feedstock with variant osx_arm64_openjdk27python3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_openjdk27python3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_openjdk27python3.13.____cp313.yaml --target-platform osx-arm64"
+description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk27python3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_openjdk27python3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk27python3.13.____cp313.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk27python3.13.____cp313"
+[feature.build.tasks."build-osx_arm64_openjdk27python3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk27python3.14.____cp314.yaml --target-platform osx-arm64"
+description = "Build pyjnius-feedstock with variant osx_arm64_openjdk27python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_openjdk27python3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_openjdk27python3.14.____cp314.yaml --target-platform osx-arm64"
+description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk27python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_openjdk27python3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk27python3.14.____cp314.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk27python3.14.____cp314"
+[feature.build.tasks."build-osx_arm64_openjdk27python3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk27python3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Build pyjnius-feedstock with variant osx_arm64_openjdk27python3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_openjdk27python3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_openjdk27python3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk27python3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_openjdk27python3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk27python3.15.____cp315.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk27python3.15.____cp315"
 [feature.build.tasks."build-osx_arm64_openjdk8python3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk8python3.11.____cpython.yaml --target-platform osx-arm64"
 description = "Build pyjnius-feedstock with variant osx_arm64_openjdk8python3.11.____cpython directly (without setup scripts)"
@@ -1073,51 +1118,6 @@ description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk8python3.15
 [feature.build.tasks."inspect-osx_arm64_openjdk8python3.15.____cp315"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk8python3.15.____cp315.yaml"
 description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk8python3.15.____cp315"
-[feature.build.tasks."build-osx_arm64_openjdk_python3.11.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk_python3.11.____cpython.yaml --target-platform osx-arm64"
-description = "Build pyjnius-feedstock with variant osx_arm64_openjdk_python3.11.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-osx_arm64_openjdk_python3.11.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_openjdk_python3.11.____cpython.yaml --target-platform osx-arm64"
-description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk_python3.11.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_arm64_openjdk_python3.11.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk_python3.11.____cpython.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk_python3.11.____cpython"
-[feature.build.tasks."build-osx_arm64_openjdk_python3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk_python3.12.____cpython.yaml --target-platform osx-arm64"
-description = "Build pyjnius-feedstock with variant osx_arm64_openjdk_python3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-osx_arm64_openjdk_python3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_openjdk_python3.12.____cpython.yaml --target-platform osx-arm64"
-description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk_python3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_arm64_openjdk_python3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk_python3.12.____cpython.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk_python3.12.____cpython"
-[feature.build.tasks."build-osx_arm64_openjdk_python3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk_python3.13.____cp313.yaml --target-platform osx-arm64"
-description = "Build pyjnius-feedstock with variant osx_arm64_openjdk_python3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_arm64_openjdk_python3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_openjdk_python3.13.____cp313.yaml --target-platform osx-arm64"
-description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk_python3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_arm64_openjdk_python3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk_python3.13.____cp313.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk_python3.13.____cp313"
-[feature.build.tasks."build-osx_arm64_openjdk_python3.14.____cp314"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk_python3.14.____cp314.yaml --target-platform osx-arm64"
-description = "Build pyjnius-feedstock with variant osx_arm64_openjdk_python3.14.____cp314 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_arm64_openjdk_python3.14.____cp314"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_openjdk_python3.14.____cp314.yaml --target-platform osx-arm64"
-description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk_python3.14.____cp314 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_arm64_openjdk_python3.14.____cp314"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk_python3.14.____cp314.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk_python3.14.____cp314"
-[feature.build.tasks."build-osx_arm64_openjdk_python3.15.____cp315"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_openjdk_python3.15.____cp315.yaml --target-platform osx-arm64"
-description = "Build pyjnius-feedstock with variant osx_arm64_openjdk_python3.15.____cp315 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_arm64_openjdk_python3.15.____cp315"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_openjdk_python3.15.____cp315.yaml --target-platform osx-arm64"
-description = "Debug pyjnius-feedstock with variant osx_arm64_openjdk_python3.15.____cp315 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_arm64_openjdk_python3.15.____cp315"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_openjdk_python3.15.____cp315.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant osx_arm64_openjdk_python3.15.____cp315"
 [feature.build.tasks."build-win_64_openjdk11python3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk11python3.11.____cpython.yaml --target-platform win-64"
 description = "Build pyjnius-feedstock with variant win_64_openjdk11python3.11.____cpython directly (without setup scripts)"
@@ -1298,6 +1298,51 @@ description = "Debug pyjnius-feedstock with variant win_64_openjdk25python3.15._
 [feature.build.tasks."inspect-win_64_openjdk25python3.15.____cp315"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk25python3.15.____cp315.yaml"
 description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk25python3.15.____cp315"
+[feature.build.tasks."build-win_64_openjdk27python3.11.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk27python3.11.____cpython.yaml --target-platform win-64"
+description = "Build pyjnius-feedstock with variant win_64_openjdk27python3.11.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_openjdk27python3.11.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_openjdk27python3.11.____cpython.yaml --target-platform win-64"
+description = "Debug pyjnius-feedstock with variant win_64_openjdk27python3.11.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_openjdk27python3.11.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk27python3.11.____cpython.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk27python3.11.____cpython"
+[feature.build.tasks."build-win_64_openjdk27python3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk27python3.12.____cpython.yaml --target-platform win-64"
+description = "Build pyjnius-feedstock with variant win_64_openjdk27python3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_openjdk27python3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_openjdk27python3.12.____cpython.yaml --target-platform win-64"
+description = "Debug pyjnius-feedstock with variant win_64_openjdk27python3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_openjdk27python3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk27python3.12.____cpython.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk27python3.12.____cpython"
+[feature.build.tasks."build-win_64_openjdk27python3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk27python3.13.____cp313.yaml --target-platform win-64"
+description = "Build pyjnius-feedstock with variant win_64_openjdk27python3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_openjdk27python3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_openjdk27python3.13.____cp313.yaml --target-platform win-64"
+description = "Debug pyjnius-feedstock with variant win_64_openjdk27python3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_openjdk27python3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk27python3.13.____cp313.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk27python3.13.____cp313"
+[feature.build.tasks."build-win_64_openjdk27python3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk27python3.14.____cp314.yaml --target-platform win-64"
+description = "Build pyjnius-feedstock with variant win_64_openjdk27python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_openjdk27python3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_openjdk27python3.14.____cp314.yaml --target-platform win-64"
+description = "Debug pyjnius-feedstock with variant win_64_openjdk27python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_openjdk27python3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk27python3.14.____cp314.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk27python3.14.____cp314"
+[feature.build.tasks."build-win_64_openjdk27python3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk27python3.15.____cp315.yaml --target-platform win-64"
+description = "Build pyjnius-feedstock with variant win_64_openjdk27python3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_openjdk27python3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_openjdk27python3.15.____cp315.yaml --target-platform win-64"
+description = "Debug pyjnius-feedstock with variant win_64_openjdk27python3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_openjdk27python3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk27python3.15.____cp315.yaml"
+description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk27python3.15.____cp315"
 [feature.build.tasks."build-win_64_openjdk8python3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk8python3.11.____cpython.yaml --target-platform win-64"
 description = "Build pyjnius-feedstock with variant win_64_openjdk8python3.11.____cpython directly (without setup scripts)"
@@ -1343,51 +1388,6 @@ description = "Debug pyjnius-feedstock with variant win_64_openjdk8python3.15.__
 [feature.build.tasks."inspect-win_64_openjdk8python3.15.____cp315"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk8python3.15.____cp315.yaml"
 description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk8python3.15.____cp315"
-[feature.build.tasks."build-win_64_openjdk_python3.11.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk_python3.11.____cpython.yaml --target-platform win-64"
-description = "Build pyjnius-feedstock with variant win_64_openjdk_python3.11.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-win_64_openjdk_python3.11.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_openjdk_python3.11.____cpython.yaml --target-platform win-64"
-description = "Debug pyjnius-feedstock with variant win_64_openjdk_python3.11.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-win_64_openjdk_python3.11.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk_python3.11.____cpython.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk_python3.11.____cpython"
-[feature.build.tasks."build-win_64_openjdk_python3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk_python3.12.____cpython.yaml --target-platform win-64"
-description = "Build pyjnius-feedstock with variant win_64_openjdk_python3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-win_64_openjdk_python3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_openjdk_python3.12.____cpython.yaml --target-platform win-64"
-description = "Debug pyjnius-feedstock with variant win_64_openjdk_python3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-win_64_openjdk_python3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk_python3.12.____cpython.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk_python3.12.____cpython"
-[feature.build.tasks."build-win_64_openjdk_python3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk_python3.13.____cp313.yaml --target-platform win-64"
-description = "Build pyjnius-feedstock with variant win_64_openjdk_python3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-win_64_openjdk_python3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_openjdk_python3.13.____cp313.yaml --target-platform win-64"
-description = "Debug pyjnius-feedstock with variant win_64_openjdk_python3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-win_64_openjdk_python3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk_python3.13.____cp313.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk_python3.13.____cp313"
-[feature.build.tasks."build-win_64_openjdk_python3.14.____cp314"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk_python3.14.____cp314.yaml --target-platform win-64"
-description = "Build pyjnius-feedstock with variant win_64_openjdk_python3.14.____cp314 directly (without setup scripts)"
-[feature.build.tasks."debug-win_64_openjdk_python3.14.____cp314"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_openjdk_python3.14.____cp314.yaml --target-platform win-64"
-description = "Debug pyjnius-feedstock with variant win_64_openjdk_python3.14.____cp314 directly (without setup scripts)"
-[feature.build.tasks."inspect-win_64_openjdk_python3.14.____cp314"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk_python3.14.____cp314.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk_python3.14.____cp314"
-[feature.build.tasks."build-win_64_openjdk_python3.15.____cp315"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_openjdk_python3.15.____cp315.yaml --target-platform win-64"
-description = "Build pyjnius-feedstock with variant win_64_openjdk_python3.15.____cp315 directly (without setup scripts)"
-[feature.build.tasks."debug-win_64_openjdk_python3.15.____cp315"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_openjdk_python3.15.____cp315.yaml --target-platform win-64"
-description = "Debug pyjnius-feedstock with variant win_64_openjdk_python3.15.____cp315 directly (without setup scripts)"
-[feature.build.tasks."inspect-win_64_openjdk_python3.15.____cp315"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_openjdk_python3.15.____cp315.yaml"
-description = "List contents of pyjnius-feedstock packages built for variant win_64_openjdk_python3.15.____cp315"
 
 [environments]
 build = ["build"]

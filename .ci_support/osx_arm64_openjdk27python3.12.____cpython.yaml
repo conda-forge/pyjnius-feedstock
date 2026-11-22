@@ -1,19 +1,25 @@
+MACOSX_SDK_VERSION:
+- '11.0'
 c_compiler:
-- vs
+- clang
 c_compiler_version:
-- '2022'
+- '21'
 c_stdlib:
-- vs
+- macosx_deployment_target
+c_stdlib_version:
+- '11.0'
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs
+- clangxx
 cxx_compiler_version:
-- '2022'
+- '21'
+macos_machine:
+- arm64-apple-darwin20.0.0
 openjdk:
-- '*'
+- '27'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -21,4 +27,7 @@ pin_run_as_build:
 python:
 - 3.12.* *_cpython
 target_platform:
-- win-64
+- osx-arm64
+zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
