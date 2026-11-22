@@ -1,7 +1,8 @@
 context:
   version: "1.8.0"
-  build_number: 0
+  build_number: 1
   openjdk: ${{ openjdk }}
+  openjdk_next: ${{ openjdk|int + 1 }}
 
 package:
   name: pyjnius
@@ -38,7 +39,7 @@ requirements:
     - setuptools
     - ant
   run:
-    - openjdk
+    - openjdk >=${{ openjdk }},<${{ openjdk_next }}
     - python
 
 tests:
