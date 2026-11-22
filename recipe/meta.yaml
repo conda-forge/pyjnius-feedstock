@@ -15,10 +15,6 @@ source:
 build:
   number: 0
   string: py{{ CONDA_PY }}jdk{{ openjdk|int or "latest" }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
-  {% if (openjdk|int or 99) == 11 %}
-  # unclear but reproducible segfaults for the oldest possible combination on windows
-  skip: true  # [win and py==310]
-  {% endif %}
 
 requirements:
   build:
