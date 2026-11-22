@@ -8,11 +8,8 @@ openjdk:
   # newest
   - "*"
   # LTS
+  - 25
   - 21
   - 17
   - 11
   - 8
-
-pin_run_as_build:
-  openjdk:
-    max_pin: x.x

@@ -1,0 +1,78 @@
+context:
+  version: "1.8.0"
+  build_number: 0
+  openjdk: ${{ openjdk }}
+
+package:
+  name: pyjnius
+  version: ${{ version }}
+
+source:
+  url: https://github.com/kivy/pyjnius/archive/${{ version }}.zip
+  sha256: 7d1d526559a705647809d60a1e0d368893f9ad63da23548c09ac72d83a388d21
+
+build:
+  number: ${{ build_number }}
+  string: py${{ python | version_to_buildstring }}jdk${{ openjdk | version_to_buildstring or "latest" }}_h${{ hash }}_${{ build_number }}
+  script:
+    file: build
+    # this is a work-around for something rattler-build should be doing,
+    # see https://github.com/prefix-dev/rattler-build/issues/2587
+    env:
+      openjdk: ${{ openjdk }}
+
+requirements:
+  build:
+    - ${{ stdlib('c') }}
+    - ${{ compiler('c') }}
+    - ${{ compiler('cxx') }}
+    - if: linux
+      then:
+        - make
+        - sed
+  host:
+    - openjdk
+    - python
+    - cython >=3.1.2
+    - pip
+    - setuptools
+    - ant
+  run:
+    - openjdk
+    - python
+
+tests:
+  - python:
+      imports:
+        - jnius
+        - jnius.env
+        - jnius_config
+  - requirements:
+      run:
+        - pytest
+    files:
+      source:
+        # created in source directory by ant (cf. build.sh / build.bat)
+        - build/test-classes
+        - tests/
+      recipe:
+        - test_pyjnius.py
+    script:
+        - python test_pyjnius.py
+        # adapt CLASSPATH to pick up test classes
+        - if: unix
+          then: export CLASSPATH="$CLASSPATH:./build/test-classes"
+          else: set "CLASSPATH=%CLASSPATH%;build/test-classes"
+        - pytest -v tests/
+
+about:
+  homepage: https://github.com/kivy/pyjnius
+  repository: https://github.com/kivy/pyjnius
+  license: MIT
+  license_file: LICENSE
+  summary: A Python module to access Java classes as Python classes using JNI (shared memory)
+
+extra:
+  recipe-maintainers:
+    - KeyWeeUsr
+    - h-vetinari

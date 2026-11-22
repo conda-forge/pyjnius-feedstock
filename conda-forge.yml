@@ -1,10 +1,9 @@
-azure:
-  max_parallel: 30
-conda_build:
-  pkg_format: '2'
+conda_build_tool: rattler-build
 conda_forge_output_validation: true
+conda_install_tool: pixi
 github:
   branch_name: main
   tooling_branch_name: main
 provider:
   linux_aarch64: default
+  osx_arm64: default
