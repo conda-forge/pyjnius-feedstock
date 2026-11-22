@@ -8,6 +8,7 @@ openjdk:
   # newest
   - "*"
   # LTS
+  - 25
   - 21
   - 17
   - 11
